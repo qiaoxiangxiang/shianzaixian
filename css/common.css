@@ -1,0 +1,570 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    opacity: 0;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.head,
+.headTop,
+.headContent {
+    width: 100%;
+}
+
+.selectric {
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.selectric .button,
+.selectric .label {
+    height: 48px;
+    line-height: 48px;
+}
+
+
+/* 顶部 */
+
+.headTop {
+    height: 40px;
+    background: #313131
+}
+
+.headTopC {
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.headTopCLeft,
+.headTopCRtxt {
+    float: left;
+    line-height: 40px;
+}
+
+.headTopCRight {
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+
+.headTopC .headToptxt,
+.headTopCRtxt .headToptxt {
+    font-size: 14px;
+    color: #ff9000;
+}
+
+.headTopC .headToptxt1,
+.headTopCRtxt .headToptxt1 {
+    font-size: 14px;
+    color: #fff;
+}
+
+.headTopC .headTopShu,
+.headTopCRtxt .headTopShu {
+    font-size: 14px;
+    color: #777;
+    margin: 0 16px;
+}
+
+.headTopCRR {
+    float: right;
+    width: 130px;
+    line-height: 40px;
+    background: #454545;
+    text-align: center;
+    margin-left: 22px;
+}
+
+.headTopCRRImg {
+    width: 17px;
+    vertical-align: middle;
+}
+
+.headTopCRRTxt {
+    font-size: 14px;
+    color: #fff;
+}
+
+.headTopCRRNum {
+    font-size: 12px;
+    color: #fff;
+    padding: 2px 3px;
+    background: #ff9000;
+    border-radius: 50%;
+}
+
+.headContentC {
+    width: 1200px;
+    height: 164px;
+    margin: 0 auto;
+}
+
+.headContent {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 头部二层上 */
+
+.headCT {
+    width: 100%;
+    height: 50px;
+    margin: 30px auto 34px;
+}
+
+.headCTLogo {
+    width: 318px;
+    vertical-align: middle;
+}
+
+.headCTDW {
+    width: 80px;
+    vertical-align: middle;
+}
+
+.headCTLeft {
+    float: left;
+}
+
+.headCTRight {
+    float: right;
+    width: 90px;
+    height: 50px;
+    line-height: 66px;
+}
+
+.headCTRImg {
+    width: 28px;
+}
+
+.headCTRtxt {
+    font-size: 14px;
+    color: #333;
+}
+
+.headCTRtxt1 {
+    font-size: 14px;
+    color: #999;
+}
+
+.headCTH3 {
+    display: inline-block;
+    line-height: 16px;
+}
+
+.headCTIput {
+    width: 544px;
+    height: 48px;
+    border: 1px solid #ececec;
+    background: #f5f5f5;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    left: 108px;
+}
+
+.headCTIput input {
+    width: 98%;
+    height: 95%;
+    border: none;
+    outline: none;
+    padding-left: 3%;
+    font-size: 14px;
+    color: #999;
+}
+
+.headCTselect {
+    width: 80px;
+    height: 100%;
+    float: left;
+}
+
+.headCTselect select {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #333;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    text-align: center;
+    outline: none;
+    line-height: 49px;
+}
+
+.headCTInput {
+    width: 410px;
+    height: 100%;
+    float: left;
+}
+
+.headCTsousuo {
+    width: 54px;
+    height: 100%;
+    float: right;
+    line-height: 54px;
+    text-align: center;
+    background: #fb6026;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.headCTsousuoImg {
+    width: 22px;
+}
+
+
+/* 头部二层下 */
+
+.headCB {
+    width: 100%;
+    height: 50px;
+}
+
+
+/* left */
+
+.headCBL {
+    width: 256px;
+    display: inline-block;
+    height: 50px;
+    overflow: hidden;
+    transition: all .5s;
+    position: relative;
+    z-index: 10;
+    float: left;
+}
+
+.headCBL:hover {
+    overflow: initial;
+    transition: all .5s;
+}
+
+.headCBL:hover .headCBLlist {
+    opacity: 1;
+    transition: all .5s;
+}
+
+.headCBLlists {
+    height: 0;
+    position: absolute;
+    top: 50px;
+}
+
+.headCBLT {
+    width: 234px;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 22px;
+    background: #fb6026;
+    height: 50px;
+    line-height: 50px;
+}
+
+.headCBLT img {
+    width: 22px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.headCBLlist {
+    width: 234px;
+    padding-left: 22px;
+    background: rgba(0, 0, 0, 0.4);
+    height: 50px;
+    line-height: 50px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.headCBLlist a {
+    font-size: 15px;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #999;
+}
+
+.headCBLlist:nth-last-of-type(1) a {
+    border-bottom: none;
+}
+
+.headCBLlist img {
+    width: 10px;
+    vertical-align: middle;
+    float: right;
+    margin-right: 20px;
+    position: absolute;
+    right: 17px;
+    top: 15px;
+}
+
+
+/* center */
+
+.headCBC {
+    display: inline-block;
+    margin-left: 19px;
+    float: left;
+    height: 42px;
+    padding-top: 8px;
+}
+
+.headCBCNav {
+    margin: 0 21px;
+    display: inline-block;
+    position: relative;
+}
+
+.headCBCNav a {
+    font-size: 16px;
+    color: #333;
+}
+
+.headCBCNav:nth-of-type(1) a {
+    color: #fe7109
+}
+
+.headCBCXian {
+    display: none;
+    width: 100%;
+    padding: 0 5px;
+    height: 4px;
+    border-radius: 4px;
+    background: #fe7109;
+    position: absolute;
+    bottom: -15px;
+    left: -5px;
+}
+
+.headCBCNav:nth-of-type(1) .headCBCXian {
+    display: inline-block;
+}
+
+.headCBCNav:hover a {
+    color: #fe7109;
+}
+
+.headCBCNav:hover .headCBCXian {
+    display: inline-block;
+}
+
+
+/* right */
+
+.headCBR {
+    display: inline-block;
+    float: right;
+    height: 42px;
+    padding-top: 8px;
+}
+
+.headCBR a {
+    font-size: 16px;
+    color: #333;
+}
+
+.foot {
+    width: 100%;
+    height: 262px;
+    background: #313131;
+}
+
+.footC {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footCTitle {
+    padding: 30px 0 18px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footCNav {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.footCNav span {
+    margin-right: 40px;
+}
+
+.footCNav span a {
+    font-size: 12px;
+    color: #999;
+}
+
+.footCNavB {
+    margin: 0;
+}
+
+.footCbottom {
+    padding-top: 26px;
+}
+
+.footCbottomL {
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.footCbottomL img {
+    width: 55px;
+    vertical-align: middle;
+    float: left;
+}
+
+.footCbottomTxt {
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+    float: left;
+    margin-left: 20px;
+    line-height: 20px;
+}
+
+.footCbottomTxt1 {
+    font-size: 16px;
+}
+
+.footCbottomR {
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+}
+
+.footCbottomTxt2 {
+    font-size: 22px;
+    color: #ff4f01;
+    margin-bottom: 6px;
+}
+
+.footCbottomR {
+    float: right;
+}
+
+.contentC {
+    width: 1200px;
+    margin: 0 auto;
+}
+.contentC1{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 42px;
+}
+/* 主体中的公共部分 */
+.contentLeft{
+    width: 197px;
+    height: 811px;
+    margin-right: 20px;
+    float: left;
+}
+.contentRight{
+    width: 983px;
+    float: left;
+    background: rgba(255,255,255,.7);
+}
+.content_left_top{
+    width: 100%;
+    background: #fff;
+}
+.contentLTli{
+    text-align: center;
+    width: 100%;
+    line-height: 62px;
+}
+.contentLTli>img{
+    width: 26px;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.contentLTli>span{
+    font-size: 18px;
+    color: #fb6026;
+    margin-left: -10px;
+}
+.contentLTli>span:nth-of-type(1){
+    font-size: 28px;
+    position: relative;
+    top: 7px;
+    left: -12px;
+}
+.contentLTli1,.contentLTli{
+    border-bottom: 1px solid #ddd;
+}
+.contentLTli1:nth-last-of-type(1){
+    border: none;
+}
+.contentLTli1{
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+.contentLTli1>div{
+    padding: 15px 0 15px 54px;
+    width: 143px;
+    position: relative;
+}
+.contentLTli1>div>.commonQJ{
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    font-size: 18px;
+    color: #333;
+}
+.contentLTli1>div:hover{
+    background: #fb6026;
+    color: #fff;
+}
+.contentLTli1>div:hover .commonQJ{
+    color: #fff;
+}
+.content_left_bottom{
+    margin-top: 34px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient(to right,#f6a313,#fd6931)
+}
+.content_left_bottom span:nth-of-type(1){
+    font-size: 28px;
+    position: relative;
+    top: 2px;
+}    

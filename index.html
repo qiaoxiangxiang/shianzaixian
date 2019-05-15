@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+
+    <script src="/js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/select.css">
+    <link rel="stylesheet" href="./css/font/iconfont.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/JqSelect.js"></script>
+    <!-- 本页 -->
+    <script src="./js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="content">
+        <!-- 轮播 -->
+        <div class="swiper-container swiper_home swiper-container-horizontal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a style="background: url('./img/home/banner.png') center center" href="#"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a style="background: url('./img/home/banner.png') center center" href="#"></a>
+                </div>
+            </div>
+        </div>
+        <!-- 登录信息 -->
+        <div class="isdenglu">
+            <!-- 用户未登录 -->
+            <div class="denglu">
+                <div class="dengluTxt">登录</div>
+                <div class="dengluTxtInput">
+                    <span class="iconfont dengluTxtIfont">&#xe600;</span>
+                    <input type="text" class="" placeholder="手机号">
+                </div>
+                <div class="dengluTxtInput">
+                    <span class="iconfont dengluTxtIfont">&#xe621;</span>
+                    <input type="text" class="" placeholder="密码">
+                </div>
+                <div class="dengluTxtInput dengluTxtInput1">
+                    <input type="text" class="" placeholder="验证码">
+                    <div class="dengluTxtYZ"></div>
+                </div>
+                <div class="dengluTxt_mima">
+                    <a href="#" class="dengluTxtWM">忘记密码</a>
+                    <a href="#" class="dengluTxtZC">没有账号？<span>立即注册</span></a>
+                </div>
+                <div class="dengluTxtDL">
+                    <a href="#" class="dengluTxtDLu">登录</a>
+                    <a href="#" class="dengluTxtJH">激活</a>
+                </div>
+            </div>
+            <!-- 用户登录成功 -->
+            <div class="yonghu" style="display:none">
+                <div class="yonghuTop">
+                    <div class="yonghuTopL">
+                        <img src="./img/home/touxiang.png" alt="">
+                        <div class="yonghuTopLTxt">
+                            <div class="yonghuTopLTxt1">刘亦菲</div>
+                            <div>修改个人信息</div>
+                        </div>
+                    </div>
+                    <div class="yonghuTopR">
+                        <a href="#">
+                            <div class="yonghuTopRImg"> 
+                                <img src="./img/home/tuichu.png" alt="">
+                            </div>
+                            <span class="yonghuTopRTxt">
+                                退出
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="yonghuTopJihuo">
+                    <a href="#">
+                            激活
+                    </a>
+                </div>
+                <div class="yonghuTopxinxi">
+                    <div class="yonghuTopxinxi1">
+                        学习进度
+                        <div class="yonghuTopjindu">
+                                <div style="width: 60%;" class="yonghuTopjindu1"></div>
+                        </div>
+                        <span class="yonghuTopjinduNum">
+                            60%
+                        </span>
+                    </div>
+                    <div class="yonghuTopxinxi1">
+                        <span>已学学时：</span>
+                        65课时    
+                    </div>
+                    <div class="yonghuTopxinxi1">
+                        <span>上次学习：</span>
+                        基础课程基础课程基础课程课程课程课程
+                    </div>
+                </div>
+                <div class="yonghuTopGG">
+                    <a href="#" class="yonghuTopGG1">
+                        <div class="iconfont yonghuTopGGIfont">&#xe635;</div>
+                        <div class="yonghuTopGGTxt">购物车</div>
+                    </a>      
+                    <a href="#" class="yonghuTopGG1">
+                        <div class="iconfont yonghuTopGGIfont">&#xe62a;</div>
+                        <div class="yonghuTopGGTxt">订单</div>
+                    </a> 
+                    <a href="#" class="yonghuTopGG1">
+                        <div class="iconfont yonghuTopGGIfont">&#xe639;</div>
+                        <div class="yonghuTopGGTxt">证书</div>
+                    </a>    
+                    <a href="#" class="yonghuTopGG1">
+                        <div class="iconfont yonghuTopGGIfont">&#xe606;</div>
+                        <div class="yonghuTopGGTxt">考试记录</div>
+                    </a> 
+                </div>
+            </div>
+        </div>
+        <!-- 轮播下方宫格 -->
+        <div class="contentC">
+            <div class="gongge">
+                <div class="gonggebox">
+                    
+                    <a href="#" class="gonggexinxi">
+                        <img class="gonggeImg" src="./img/home/gongge1.png" alt="">
+                        <div class="gonggeTxt">培训流程</div>
+                    </a>
+                    <a href="#" class="gonggexinxi">
+                        <img class="gonggeImg" src="./img/home/gongge2.png" alt="">
+                        <div class="gonggeTxt">购物车</div>
+                    </a>
+                    <a href="#" class="gonggexinxi">
+                        <img class="gonggeImg" src="./img/home/gongge3.png" alt="">
+                        <div class="gonggeTxt">APP下载</div>
+                    </a>
+                    <a href="#" class="gonggexinxi">
+                        <img class="gonggeImg" src="./img/home/gongge4.png" alt="">
+                        <div class="gonggeTxt">证书查询</div>
+                    </a>
+                    <a href="#" class="gonggexinxi">
+                        <img class="gonggeImg" src="./img/home/gongge5.png" alt="">
+                        <div class="gonggeTxt">关于我们</div>
+                    </a>
+                    <a href="#" class="gonggexinxi">
+                        <img class="gonggeImg" src="./img/home/gongge6.png" alt="">
+                        <div class="gonggeTxt">法规标准</div>
+                    </a>
+                    <div class="gonggeFG"></div>
+                    <div class="gonggeFG1"></div>
+                </div>
+                <a href="#" class="gLeftImg"><img src="./img/home/Gleft1.png" alt=""></a>
+                <a href="#" class="gLeftImg"><img src="./img/home/Gleft2.png" alt=""></a>
+                <a href="#" class="gLeftImg"><img src="./img/home/Gleft3.png" alt=""></a>
+            </div>
+            <div class="xinwen">   
+                <div class="xinwenLeft">
+                    <div class="xinwenLeft_title">
+                        <a href="#" class="xinwenLeft_TList">
+                                科普辟谣                
+                            <span class="headCBCXian"></span>
+                        </a>
+                        <a href="#" class="xinwenLeft_TList">
+                                学考辅导
+                            <span class="headCBCXian"></span>
+                        </a>
+                        <a href="#" class="xinwenLeft_TList">
+                                深度解读
+                            <span class="headCBCXian"></span>
+                        </a>
+                        <a href="#" class="xinwenLeft_TList1">
+                            查看更多
+                            <img src="./img/home/jiantou1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="xinwenLeftBox">
+                        <div class="xinwenLeftImgTxt">
+                            <a href="#" class="xinwenLeftITBox">
+                                <img class="xinwenLeftI" src="./img/home/imageTxt1.png" alt="">
+                                <div class="xinwenLeftIT">
+                                    绿色加工工艺制备灵芝多糖
+                                </div>
+                            </a>
+                            <a href="#" class="xinwenList">
+                                <div class="xinwenTitle">
+                                    <span class="xinwenListShu"></span>
+                                    灰树花口服液生产技术项目
+                                </div>
+                                <div class="xinwenContent">
+                                        本项目以灰树花为原料，经发酵本项目以灰树花为原料，经发酵本项目以灰树花为原料，经发酵，浓缩而制得口服液。利用该法生产的口服液保留了发酵液中的功能因子...
+                                </div>
+                                <div class="xinwenTimer">
+                                    时间：2018.03.25
+                                </div>
+                            </a>
+                        </div>
+                        <div class="xinwenLists">
+                            <a href="#" class="xinwenList">
+                                <div class="xinwenTitle">
+                                    <span class="xinwenListShu"></span>
+                                    固液分离型功能饮料生产技术项目生产...
+                                </div>
+                                <div class="xinwenContent">
+                                        本项目以灰树花为原料，经发酵本项目以灰树花为原料，经发酵本项目以灰树花为原料，经发酵，浓缩而制得口服液。利用该法生产的口服液保留了发酵液中的功能因子...
+                                </div>
+                                <div class="xinwenTimer">
+                                    时间：2018.03.25
+                                </div>
+                            </a>
+                            <a href="#" class="xinwenList">
+                                <div class="xinwenTitle">
+                                    <span class="xinwenListShu"></span>
+                                    赤藓糖醇共结晶糖研究项目术项目生产...
+                                </div>
+                                <div class="xinwenContent">
+                                        本项目以灰树花为原料，经发酵本项目以灰树花为原料，经发酵本项目以灰树花为原料，经发酵，浓缩而制得口服液。利用该法生产的口服液保留了发酵液中的功能因子...
+                                </div>
+                                <div class="xinwenTimer">
+                                    时间：2018.03.25
+                                </div>
+                            </a>
+                            <a href="#" class="xinwenList">
+                                <div class="xinwenTitle">
+                                    <span class="xinwenListShu"></span>
+                                    嗜酸乳杆菌高密度培菌项目生产养技术...
+                                </div>
+                                <div class="xinwenContent">
+                                        本项目以灰树花为原料，经发酵本项目以灰树花为原料，经发酵本项目以灰树花为原料，经发酵，浓缩而制得口服液。利用该法生产的口服液保留了发酵液中的功能因子...
+                                </div>
+                                <div class="xinwenTimer">
+                                    时间：2018.03.25
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xinwenRight">
+                    <div class="xinwenRight_title">
+                        <img class="xinwenRightImg" src="./img/home/toutiao.png" alt="">
+                        <a href="#" class="xinwenLeft_TList1">
+                            查看更多
+                            <img src="./img/home/jiantou1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="xinwenRightBox">
+                        <a href="#" class="xinwenRlist">
+                            <div class="xinwenRlistTxt">
+                                <div class="xinwenRTitle">
+                                    两部门：最大限度地遏制校园食物中毒事件发生
+                                </div>
+                                <div class="xinwenRContent">
+                                    本项目以灰树花为原本项目以灰树花为原本项目以灰树花为原料，经发酵，浓缩...
+                                </div>
+                                <div class="xinwenRTimer">
+                                    时间：2018.03.25
+                                </div>
+                            </div>
+                            <img class="xinwenRlistImg" src="./img/home/xinwenr1.png" alt="">
+                        </a>
+                        <a href="#" class="xinwenRlist">
+                            <div class="xinwenRlistTxt">
+                                <div class="xinwenRTitle">
+                                        市场监管总局：撤销北京同仁堂
+                                        的中国质量奖称号
+                                </div>
+                                <div class="xinwenRContent">
+                                    本项目以灰树花为原本项目以灰树花为原本项目以灰树花为原料，经发酵，浓缩...
+                                </div>
+                                <div class="xinwenRTimer">
+                                    时间：2018.03.25
+                                </div>
+                            </div>
+                            <img class="xinwenRlistImg" src="./img/home/xinwenr1.png" alt="">
+                        </a>
+                        <a href="#" class="xinwenRlist">
+                            <div class="xinwenRlistTxt">
+                                <div class="xinwenRTitle">
+                                    胶州市市场监管局 聚焦能力提升开展全员培训
+                                </div>
+                                <div class="xinwenRContent">
+                                    本项目以灰树花为原本项目以灰树花为原本项目以灰树花为原料，经发酵，浓缩...
+                                </div>
+                                <div class="xinwenRTimer">
+                                    时间：2018.03.25
+                                </div>
+                            </div>
+                            <img class="xinwenRlistImg" src="./img/home/xinwenr1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contontKeBox">
+            <div class="contontKe">
+                <div class="contontKeTop">
+                    <div class="contontKeLei">
+                        <div class="contontKeQuan"><div class="contontKeQuan1"></div></div>
+                        <span>基础课程</span>
+                    </div>
+                    <a href="#" class="xinwenLeft_TList1">
+                        查看更多
+                        <img src="./img/home/jiantou1.png" alt="">
+                    </a>
+                </div>
+                <div class="contontKeLists">
+                    <a href="#" class="contontKeList">
+                        <img class="contontKeImg" src="./img/home/ke1.png" alt="">
+                        <div class="contontKeListTxt">
+                            送餐人员动画课程
+                        </div>
+                        <div class="contontKeListGoBuy">
+                            <span class="contontKePrice">￥229.00</span>
+                            <span class="contontKeBuy">立即购买</span>
+                        </div>
+                    </a>
+                    <a href="#" class="contontKeList">
+                        <img class="contontKeImg" src="./img/home/ke2.png" alt="">
+                        <div class="contontKeListTxt">
+                            送餐人员动画课程
+                        </div>
+                        <div class="contontKeListGoBuy">
+                            <span class="contontKePrice">￥229.00</span>
+                            <span class="contontKeBuy">立即购买</span>
+                        </div>
+                    </a>
+                    <a href="#" class="contontKeList">
+                        <img class="contontKeImg" src="./img/home/ke3.png" alt="">
+                        <div class="contontKeListTxt">
+                            送餐人员动画课程
+                        </div>
+                        <div class="contontKeListGoBuy">
+                            <span class="contontKePrice">￥229.00</span>
+                            <span class="contontKeBuy">立即购买</span>
+                        </div>
+                    </a>
+                    <a href="#" class="contontKeList">
+                        <img class="contontKeImg" src="./img/home/ke4.png" alt="">
+                        <div class="contontKeListTxt">
+                            送餐人员动画课程
+                        </div>
+                        <div class="contontKeListGoBuy">
+                            <span class="contontKePrice">￥229.00</span>
+                            <span class="contontKeBuy">立即购买</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="contontKe">
+                    <div class="contontKeTop">
+                        <div class="contontKeLei">
+                            <div class="contontKeQuan"><div class="contontKeQuan1"></div></div>
+                            <span>定制课程</span>
+                        </div>
+                        <a href="#" class="xinwenLeft_TList1">
+                            查看更多
+                            <img src="./img/home/jiantou1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contontKeLists">
+                        <a href="#" class="contontKeList">
+                            <img class="contontKeImg" src="./img/home/ke5.png" alt="">
+                            <div class="contontKeListTxt">
+                                送餐人员动画课程
+                            </div>
+                            <div class="contontKeListGoBuy">
+                                <span class="contontKePrice">￥229.00</span>
+                                <span class="contontKeBuy">立即购买</span>
+                            </div>
+                        </a>
+                        <a href="#" class="contontKeList">
+                            <img class="contontKeImg" src="./img/home/ke6.png" alt="">
+                            <div class="contontKeListTxt">
+                                送餐人员动画课程
+                            </div>
+                            <div class="contontKeListGoBuy">
+                                <span class="contontKePrice">￥229.00</span>
+                                <span class="contontKeBuy">立即购买</span>
+                            </div>
+                        </a>
+                        <a href="#" class="contontKeList">
+                            <img class="contontKeImg" src="./img/home/ke7.png" alt="">
+                            <div class="contontKeListTxt">
+                                送餐人员动画课程
+                            </div>
+                            <div class="contontKeListGoBuy">
+                                <span class="contontKePrice">￥229.00</span>
+                                <span class="contontKeBuy">立即购买</span>
+                            </div>
+                        </a>
+                        <a href="#" class="contontKeList">
+                            <img class="contontKeImg" src="./img/home/ke8.png" alt="">
+                            <div class="contontKeListTxt">
+                                送餐人员动画课程
+                            </div>
+                            <div class="contontKeListGoBuy">
+                                <span class="contontKePrice">￥229.00</span>
+                                <span class="contontKeBuy">立即购买</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </div>
+        <div class="contontShi">
+            <div class="contentC">
+                <div class="contontShiBox">
+                    <div class="contontQuanShi">
+                        <img class="contontshiImg" src="./img/home/quanshi.png" alt="">
+                        <div class="contontQuanShiTxt1">
+                                汇聚最权威<br>
+                                顶尖的专家资源
+                        </div>
+                        <div class="quanGengduo">
+                            <span>更多</span>
+                            <div class="gengduo">
+                                <img src="./img/home/jiantou1.png" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="contontShiList">
+                        <img class="contontshiImg" src="./img/home/jiangshi1.png" alt="">
+                        <div class="contontShiTxt">
+                            <span class="contontShiTxt1">张志强</span>
+                            <span class="contontShiTxt2">教授/博士生导师</span>
+                        </div>
+                        <div class="contontShiContent">
+                            香港中文大学生命科学学院食品与营养科学系教授...
+                        </div>
+                    </div>
+                    <div class="contontShiList">
+                        <img class="contontshiImg" src="./img/home/jiangshi2.png" alt="">
+                        <div class="contontShiTxt">
+                            <span class="contontShiTxt1">张志强</span>
+                            <span class="contontShiTxt2">教授/博士生导师</span>
+                        </div>
+                        <div class="contontShiContent">
+                            香港中文大学生命科学学院食品与营养科学系教授...
+                        </div>
+                    </div>
+                    <div class="contontShiList">
+                        <img class="contontshiImg" src="./img/home/jiangshi3.png" alt="">
+                        <div class="contontShiTxt">
+                            <span class="contontShiTxt1">张志强</span>
+                            <span class="contontShiTxt2">教授/博士生导师</span>
+                        </div>
+                        <div class="contontShiContent">
+                            香港中文大学生命科学学院食品与营养科学系教授...
+                        </div>
+                    </div>
+                    <div class="contontShiList">
+                        <img class="contontshiImg" src="./img/home/jiangshi4.png" alt="">
+                        <div class="contontShiTxt">
+                            <span class="contontShiTxt1">张志强</span>
+                            <span class="contontShiTxt2">教授/博士生导师</span>
+                        </div>
+                        <div class="contontShiContent">
+                            香港中文大学生命科学学院食品与营养科学系教授...
+                        </div>
+                    </div>
+                    <div class="contontShiList">
+                        <img class="contontshiImg" src="./img/home/jiangshi4.png" alt="">
+                        <div class="contontShiTxt">
+                            <span class="contontShiTxt1">张志强</span>
+                            <span class="contontShiTxt2">教授/博士生导师</span>
+                        </div>
+                        <div class="contontShiContent">
+                            香港中文大学生命科学学院食品与营养科学系教授...
+                        </div>
+                    </div>
+                </div>
+                <div class="contontZbox">
+                    <div class="contontKeTop">
+                        <div class="contontKeLei">
+                            <div class="contontKeQuan"><div class="contontKeQuan1"></div></div>
+                            <span>定制课程</span>
+                        </div>
+                        <a href="#" class="xinwenLeft_TList1">
+                            查看更多
+                            <img src="./img/home/jiantou1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="contontZlist">
+                        <div class="swiper-container swiperShizi">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide">
+                                    <div class="swiperShiziimg">
+                                        <img src="./img/home/zheng1.png" alt="">
+                                    </div>
+                                    <div class="swiperShiziY"></div>
+                                    <div class="swiperShiziTxt1">陈红红</div>
+                                    <div class="swiperShiziTxt2">获得：食品安全管理法证书</div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div class="swiperShiziimg">
+                                        <img src="./img/home/zheng2.png" alt="">
+                                    </div>
+                                    <div class="swiperShiziY"></div>
+                                    <div class="swiperShiziTxt1">陈红红</div>
+                                    <div class="swiperShiziTxt2">获得：食品安全管理法证书</div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div class="swiperShiziimg">
+                                        <img src="./img/home/zheng3.png" alt="">
+                                    </div>
+                                    <div class="swiperShiziY"></div>
+                                    <div class="swiperShiziTxt1">陈红红</div>
+                                    <div class="swiperShiziTxt2">获得：食品安全管理法证书</div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div class="swiperShiziimg">
+                                        <img src="./img/home/zheng4.png" alt="">
+                                    </div>
+                                    <div class="swiperShiziY"></div>
+                                    <div class="swiperShiziTxt1">陈红红</div>
+                                    <div class="swiperShiziTxt2">获得：食品安全管理法证书</div>
+                                </a>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBtxt">
+                    目前已有 <span>“300万”</span>学员在食安在线平台，已获得证书！
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+<script src="./js/common.js"></script>
+<script>
+    
+    window.onload = function() {
+        $('#headSelect').selectric();
+        $("body").css({
+            "opacity": 1
+        })
+        var headerHeight = $(".header").height();
+        var footerHeight = $(".footer").height();
+        var height = $(window).height();
+        $(".content").css({
+            "min-height": height - headerHeight - footerHeight + "px"
+        })
+
+        if ($(".swiper_home").find(".swiper-slide").length > 1) {
+            var mySwiper = new Swiper('.swiper_home', {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                initialSlide: 0,
+                observer: true, //修改swiper自己或子元素时，自动初始化swiper
+                observeParents: true, //修改swiper的父元素时，自动初始化swiper
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        }
+
+        var swiper = new Swiper('.swiperShizi', {
+            slidesPerView: 5.5,
+            centeredSlides : true,
+            spaceBetween: 35,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        // 验证码
+        $(".dengluTxtYZ").html(get_random_g_v())
+        $(".dengluTxtYZ").click(function(){
+            $(".dengluTxtYZ").html(get_random_g_v())
+        })
+        
+
+    }
+</script>
+
+</html>

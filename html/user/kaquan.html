@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>卡券激活</title>
+    <script src="../../js/jquery.js"></script>
+    <link rel="stylesheet" href="../../css/select.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/font/iconfont.css">
+    <!-- 本页 -->
+    <script src="../../js/JqSelect.js"></script>
+    <link rel="stylesheet" href="../../css/user/kaquan.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="content">
+        <div class="contentC1">
+            <div class="contentLeft"></div>
+            <div class="contentRight">
+                <div class="kaquanTop">
+                    <div class="kaquanTopXian">
+                        <!-- 选中类名 kaquanBuActive -->
+                        <div class="kaquanBu kaquanBuActive">
+                            <span>01</span>
+                            <div class="kaquanBuTxt">
+                                输入激活码
+                            </div>
+                        </div>
+                        <div class="kaquanBu">
+                            <span>02</span>
+                            <div class="kaquanBuTxt">
+                                选择套包
+                            </div>
+                        </div>
+                        <div class="kaquanBu">
+                            <span>03</span>
+                            <div class="kaquanBuTxt">
+                                激活成功
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 切换 kaquanActive -->
+                <!-- 输入卡券号 -->
+                <div class="kaquanShu kaquanActive">
+                    <div class="kaquanInput1">
+                        <div class="headCTIput">
+                            <div class="headCTselect">
+                                <select name="" id="headSelects">
+                                    <option value="">课程</option>
+                                    <option value="">视频</option>
+                                    <option value="">视频</option>
+                                    <option value="">视频</option>
+                                    <option value="">视频</option>
+                                </select>
+                            </div>
+                            <div class="headCTInput">
+                                <input type="text" placeholder="请输入您的激活码"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kaquanInput1">
+                        <div class="headCTIput">
+                            <div class="headCTInput">
+                                <input type="text" placeholder="请输入您的激活码密码"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kaquanShuQue">
+                        <div class="kaquanShuQueJ">激活</div>
+                    </div>
+                </div>
+                <!-- 选择课程 -->
+                <div class="kaquanXuan">
+                    <div class="kaquanXuanTxt">
+                        选择课程套包
+                    </div>
+                    <!-- 选购中 kaquanXKeActive -->
+                    <div class="kaquanXuanKe">
+                        <div class="kaquanXuanKeImg kaquanXKeActive">
+                            <img src="../../img/kaquan/kaquan.png" alt="">
+                        </div>
+                        <div class="kaquanXuanKeImg">
+                            <img src="../../img/kaquan/kaquan1.png" alt="">
+                        </div>
+                        <div class="kaquanXuanKeImg">
+                            <img src="../../img/kaquan/kaquan2.png" alt="">
+                        </div>
+                        <div class="kaquanXuanKeImg">
+                            <img src="../../img/kaquan/kaquan3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="kaquanXuanAn">
+                        <div class="kaquanXuanQu">取消</div>
+                        <div class="kaquanXuanQue">激活</div>
+                    </div>
+                </div>
+                <!-- 确认选择 -->
+                <div class="kaquanQue">
+                    <div class="kaquanQueImg">
+                        <img src="../../img/kaquan/xuanzhong.png" alt="">
+                    </div>
+                    <div class="kaquanQueTxt">
+                            成功激活20学时课程
+                    </div>
+                    <div class="kaquanQueAn">
+                        <div class="kaquanXuanQu">继续激活</div>
+                        <div class="kaquanXuanQue">激活</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+<script src="../../js/common.js"></script>
+<script>
+    window.onload = function(){
+        $('#headSelect').selectric();
+        $('#headSelects').selectric();
+        $("body").css({
+            "opacity": 1
+        })
+        var headerHeight = $(".header").height();
+        var footerHeight = $(".footer").height();
+        var height = $(window).height();
+        $(".content").css({
+            "min-height": height - headerHeight - footerHeight + "px"
+        })
+    }
+</script>
+</html>

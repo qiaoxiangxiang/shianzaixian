@@ -1,0 +1,274 @@
+.content{
+    width: 100%;
+    border-top: 4px solid #f5f5f5;
+    background: #f4f4f4;
+    padding-bottom: 70px;
+}
+.courseTop{
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    line-height: 65px;
+}
+.courseTop a{
+    color: #333;
+}
+.courseBoxTop{
+    width: 1136px;
+    height: 354px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 28px 28px 28px 36px;
+    position: relative;
+    overflow: hidden;
+}
+.courseBoxTop img{
+    width: 526px;
+    float: left;
+    margin-right: 37px;
+    border-radius: 10px;
+}
+.detailBox{
+    width: 568px;
+    height: 354px;
+    float: left;
+}
+.detailTitle{
+    font-size: 26px;
+    color: #333;
+    padding-bottom: 28px;
+}
+.detailTxt{
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 18px;
+}
+.detailTxt1{
+    padding-bottom: 26px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.detailPrice{
+    padding: 30px 0 40px;
+    font-size: 16px;
+    color: #333;
+}
+.detailPrice span{
+    font-size: 30px;
+    color: #fb6026;
+}
+.detailBtn1{
+    line-height: 48px;
+    width: 158px;
+    border: 1px solid #fec5a3;
+    background: #fef8f0;
+    font-size: 16px;
+    color: #fb6026;
+    text-align: center;
+    border-radius: 5px;
+}
+.detailBtn2{
+    line-height: 50px;
+    width: 160px;
+    background: #fb6026;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+/* shipin */
+.courseBoxBottom{
+    width: 1144px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 18px 28px;
+    margin-top: 30px;
+}
+.detailCourse{
+    position: relative;
+    overflow: hidden;
+}
+.detailCourseImg{
+    width: 202px;
+    height: 113px;
+    padding: 6px 6px 18px 6px;
+    float: left;
+    margin-right: 18px;
+    line-height: 113px;
+}
+.detailCourseActive{
+    background: url("../../img/course/xuan.png")no-repeat center center;
+}
+.detailCourseImg:nth-of-type(5n){
+    margin: 0;
+}
+.detailCourseImg img{
+    width: 100%;
+    max-height: 100%;
+}
+/* 详情列表 */
+/* 标题 */
+.detailCtitle{
+    padding: 22px 0 0px;
+    font-size: 25px;
+}
+.detailCtitle span:nth-of-type(1){
+    font-size: 30px;
+    color: #fb6026;
+}
+.detailCtitle span:nth-of-type(2){
+    color: #333;
+}
+.detailCtitle span:nth-of-type(3){
+    color: #666;
+}
+/* 大列表头部 */
+.detailCLBox{
+    margin-top: 30px;
+}
+.detailCLtitle{
+    width: 100%;
+    line-height: 52px;
+    background: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
+.detailCLTleft{
+    width: 600px;
+    color: #333;
+    font-size: 18px;
+    padding-left: 20px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    float: left;
+}
+.detailCLTleft .detailIcon{
+    font-size: 34px;
+    position: relative;
+    top: 1px;
+    float: left;
+}
+.detailCLTright{
+    color: #666;
+    font-size: 15px;
+    float: right;
+    margin-right: 18px;
+}
+.detailCLTright .detailIcon{
+    font-size: 18px;
+}
+.detailCLTRtxt1{
+    margin-right: 39px;
+}
+.detailCLTRtxt2{
+    margin-right: 76px;
+}
+.detailCLTrightActive:hover .detailCLTRtxt3{
+    color: #fb6026;
+}
+.detailCLTrightActive:hover .detailXiala{
+    color: #fb6026;
+}
+.detailCLtitleActive{
+    background: #fb6026;
+}
+.detailCLtitleActive .detailCLTleft{
+    color: #fff;
+}
+.detailCLtitleActive .detailCLTright{
+    color: #fff;
+}
+/* 小列表 头部 */
+
+.detailXtitle{
+    width: 1112px;
+    margin: 0 auto;
+    line-height: 58px;
+    padding-top: 8px;
+    font-size: 17px;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #d6d6d6;
+}
+.detailLies{
+    margin-top: 8px;
+}
+.detailLie{
+    width: 1094px;
+    padding-left: 50px;
+    line-height: 45px;
+    position: relative;
+}
+.detailXian{
+    width: 1px;
+    height: 45px;
+    background: #f0f0f0;
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    left: 25px;
+}
+.detailLies .detailLie:nth-last-of-type(1) .detailXian{
+    background: rgba(0,0,0,0)
+}
+.detaiKQuan{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    line-height: 4px;
+    text-align: center;
+    border: 1px solid #d6d6d6;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+.detaiShiting{
+    color: #666;
+}
+.detaisQuan{
+    display: none;
+    width: 6px;
+    height: 6px;
+    background: #fb6026;
+    border-radius: 50%;
+}
+.detaisQuanActive{
+    display: inline-block;
+}
+.detaiShiting{
+    float: right;
+}
+.detaiShiting .detaiSTFont{
+    font-size: 18px;
+}
+.isdetailST{
+    margin-right: 20px;
+    color: #fb6026;
+    display: inline-block;
+}
+.NodetailST{
+    display: none;
+}
+.detaitimer{
+    margin-left: 10px;
+    margin-right: 14px;
+}
+.detailLieHover{
+    cursor: pointer;
+}
+.detailLieHover:hover{
+    color: #fb6026;
+    background: #ffefe9;
+}
+.detailLieHover:hover .isdetailST{
+    color: #fb6026
+}
+/* 收起类表 */
+.detailXliBox{
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}

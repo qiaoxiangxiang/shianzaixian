@@ -1,0 +1,194 @@
+.content{
+    width: 100%;
+    border-top: 4px solid #f5f5f5;
+}
+.courseTop{
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    line-height: 65px;
+}
+.courseTop a{
+    color: #333;
+}
+.courselei{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.courseBtn{
+    font-size: 18px;
+    color: #333;
+    position: relative;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.courseBtn .headCBCXian{
+    padding: 0;
+    left: 0;
+}
+.courseBtn:hover{
+    color: #fb6026;
+}
+.courseBtn:hover .headCBCXian{
+    display: inline-block;
+}
+.courseBtnActive{
+    color: #fb6026;
+}
+.courseBtnActive .headCBCXian{
+    display: inline-block;
+}
+/* 基础课 */
+.courselist{
+    padding-bottom: 100px;
+    display: none;
+}
+.courselistActive{
+    display: block;
+}
+
+.courseJichu{
+    width: 100%;
+    height: 183px;
+    box-shadow: 0 0 30px #bbb;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.courseJichuImg{
+    width: 296px;
+    float: left;
+}
+.courseJiTd{
+    width: 180px;
+    height: 100%;
+    float: left;
+    border-left: 1px solid #eee;
+}
+.courseJiTd:nth-of-type(1){
+    border: none;
+    line-height: 183px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+.courseJiTd:nth-of-type(1) span{
+    font-size: 30px;
+    color: #fb6026;
+}
+.courseJiTd:nth-of-type(2) .courseJiTxt,
+.courseJiTd:nth-of-type(3) .courseJiTxt,
+.courseJiTd:nth-of-type(4) .courseJiTxt{
+    width: 100%;
+    margin-top: 40px;
+    line-height: 20px;
+}
+.courseJiTxt1{
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.courseJiTxt2{
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.courseJiTd:nth-of-type(2){
+    padding-left: 38px;
+    width: 142px;
+}
+.courseJiTd:nth-of-type(2) .courseJiTxt1,
+.courseJiTd:nth-of-type(2) .courseJiTxt2
+{
+    text-align: left;
+}
+.courseJichuBtn{
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0 0 33px;
+    border-radius: 5px;
+}
+.courseJichuBtn:nth-of-type(1){
+    width: 115px;
+    line-height: 40px;
+    background: #fb6026;
+    color: #fff;
+}
+.courseJichuBtn:nth-of-type(2){
+    width: 113px;
+    line-height: 38px;
+    border: 1px solid #0895e5;
+    color: #0895e5;
+}
+.courseJichuBtn:nth-of-type(3){
+    width: 113px;
+    line-height: 38px;
+    border: 1px solid #999;
+    color: #999;
+}
+/* 定制课程 */
+.courseDingzhi .courseJichu{
+    display: inline-block;
+    width: 280px;
+    height: auto;
+    margin-right: 21px;
+}
+.courseDingzhi .courseJichu:nth-of-type(4n){
+    margin-right: 0px;
+}
+.courseDingzhi .courseJichuImg{
+    float: none;
+    width: 100%;
+}
+.courseDingzhi .courseJiTd{
+    float: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+.courseDingzhi .courseJiTd:nth-of-type(1){
+    line-height: 107px;
+}
+.courseDingzhi .courseJiTd:nth-of-type(2),
+.courseDingzhi .courseJiTd:nth-of-type(3),
+.courseDingzhi .courseJiTd:nth-of-type(4){
+    width: 260px;
+    margin: 0;
+    padding: 20px 0 20px 20px;
+}
+.courseDingzhi .courseJiTd:nth-of-type(2){
+    padding: 20px 0 14px 20px;
+}
+.courseDingzhi .courseJiTd:nth-of-type(2) .courseJiTxt,
+.courseDingzhi .courseJiTd:nth-of-type(3) .courseJiTxt,
+.courseDingzhi .courseJiTd:nth-of-type(4) .courseJiTxt,
+.courseDingzhi .courseJiTd:nth-of-type(2) .courseJiTxt1,
+.courseDingzhi .courseJiTd:nth-of-type(3) .courseJiTxt1,
+.courseDingzhi .courseJiTd:nth-of-type(4) .courseJiTxt1,
+.courseDingzhi .courseJiTd:nth-of-type(2) .courseJiTxt2,
+.courseDingzhi .courseJiTd:nth-of-type(3) .courseJiTxt2,
+.courseDingzhi .courseJiTd:nth-of-type(4) .courseJiTxt2{
+    margin: 0;
+    text-align: left;
+}
+.courseDingzhi .courseJiTd:nth-of-type(5){
+    position: relative;
+    overflow: hidden;
+    height: 90px;
+}
+.courseDingzhi .courseJiTd:nth-of-type(5) .courseJichuBtn{
+    margin: 26px 0 0;
+}
+.courseDingzhi .courseJiTd:nth-of-type(5) .courseJichuBtn:nth-of-type(2){
+    float: left;
+    margin: 26px 17px 0;
+}

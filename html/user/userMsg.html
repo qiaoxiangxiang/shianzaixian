@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人信息</title>
+    <script src="../../js/jquery.js"></script>
+    <link rel="stylesheet" href="../../css/select.css">
+    <link rel="stylesheet" href="../../css/font/iconfont.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <script src="../../js/JqSelect.js"></script>
+    <!-- 本页 -->
+    <link rel="stylesheet" href="../../css/user/userMsg.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="content">
+        <div class="contentC1">
+            <div class="contentLeft">
+                    
+
+            </div>
+            <div class="contentRight">
+                <div class="msgTitle">个人信息</div>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+<script src="../../js/common.js"></script>
+<script>
+    window.onload = function(){
+        $('#headSelect').selectric();
+        $("body").css({
+            "opacity": 1
+        })
+        var headerHeight = $(".header").height();
+        var footerHeight = $(".footer").height();
+        var height = $(window).height();
+        $(".content").css({
+            "min-height": height - headerHeight - footerHeight + "px"
+        })
+    }
+</script>
+</html>

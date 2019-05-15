@@ -1,0 +1,22 @@
+http://www.browsersync.cn
+
+# 启动 BrowserSync
+browser-sync start --server --files "**/*.js, **/*.css, **/*.html"
+browser-sync start --server --files "**/*.js, **/*.html"
+
+#启动BrowserSync
+@echo off
+start cmd /k "cd/d D:\work\svn_yaqoo\daishumed\v1.1\www && dir && browser-sync start --server --files '**/*.js, **/*.css, **/*.html'"
+
+#js 错误日志地址
+http://t-www.daishumed.com/error/logs/201901/06.log
+
+// css 压缩
+@import url("nav.css");
+node r.js -o cssIn=assets/css/h5/min.css out=assets/css/h5/min/else/news_detail.css optimizeCss=standard
+
+// js 压缩
+node D:\work\svn_yaqoo\daishumed\v1.1\www\r.js -o build.js
+
+//调试工具
+网址+?debug=1

@@ -1,0 +1,15 @@
+.content{
+    background: #f3f3f3;
+}
+.contentRight{
+    height: 898px;
+    background: #fff;
+}
+.msgTitle{
+    width: 924px;
+    margin: 10px auto 0;
+    line-height: 60px;
+    font-size: 22px;
+    color: #333;
+    border-bottom: 1px solid #e9e9e9;
+}
