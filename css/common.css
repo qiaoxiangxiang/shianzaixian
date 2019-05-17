@@ -4,6 +4,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    background: #fff;
 }
 
 body {
@@ -269,7 +270,7 @@ a {
     transition: all .5s;
 }
 
-.headCBL:hover .headCBLlist {
+.headCBL:hover .headCBLlists {
     opacity: 1;
     transition: all .5s;
 }
@@ -278,6 +279,8 @@ a {
     height: 0;
     position: absolute;
     top: 50px;
+    opacity: 0;
+    transition: all .5s;
 }
 
 .headCBLT {
@@ -302,8 +305,6 @@ a {
     background: rgba(0, 0, 0, 0.4);
     height: 50px;
     line-height: 50px;
-    opacity: 0;
-    transition: all .5s;
 }
 
 .headCBLlist a {
@@ -478,82 +479,100 @@ a {
     width: 1200px;
     margin: 0 auto;
 }
-.contentC1{
+
+.contentC1 {
     width: 1200px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
     padding-top: 42px;
 }
+
 /* 主体中的公共部分 */
-.contentLeft{
+.contentLeft {
     width: 197px;
     height: 811px;
     margin-right: 20px;
     float: left;
 }
-.contentRight{
+
+.contentRight {
     width: 983px;
+    min-height: 824px;
     float: left;
-    background: rgba(255,255,255,.7);
+    background: rgba(255, 255, 255, .7);
 }
-.content_left_top{
+
+.content_left_top {
     width: 100%;
     background: #fff;
 }
-.contentLTli{
+
+.contentLTli {
     text-align: center;
     width: 100%;
     line-height: 62px;
 }
-.contentLTli>img{
+
+.contentLTli>img {
     width: 26px;
     position: relative;
     vertical-align: middle;
     margin-right: 10px;
 }
-.contentLTli>span{
+
+.contentLTli>span {
     font-size: 18px;
     color: #fb6026;
     margin-left: -10px;
 }
-.contentLTli>span:nth-of-type(1){
+
+.contentLTli>span:nth-of-type(1) {
     font-size: 28px;
     position: relative;
     top: 7px;
     left: -12px;
 }
-.contentLTli1,.contentLTli{
+
+.contentLTli1,
+.contentLTli {
     border-bottom: 1px solid #ddd;
 }
-.contentLTli1:nth-last-of-type(1){
+
+.contentLTli1:nth-last-of-type(1) {
     border: none;
 }
-.contentLTli1{
+
+.contentLTli1 {
     padding: 10px 0;
     font-size: 14px;
     color: #333;
 }
-.contentLTli1>div{
+
+.contentLTli1>div {
     padding: 15px 0 15px 54px;
     width: 143px;
     position: relative;
 }
-.contentLTli1>div>.commonQJ{
+
+.contentLTli1>div>.commonQJ {
     position: absolute;
     top: 14px;
     right: 20px;
     font-size: 18px;
     color: #333;
 }
-.contentLTli1>div:hover{
+
+.contentLTli1>div:hover {
     background: #fb6026;
     color: #fff;
 }
-.contentLTli1>div:hover .commonQJ{
+
+.contentLTli1>div:hover .commonQJ {
     color: #fff;
 }
-.content_left_bottom{
+
+.content_left_bottom {
     margin-top: 34px;
     border-radius: 5px;
     font-size: 18px;
@@ -561,10 +580,79 @@ a {
     width: 100%;
     line-height: 50px;
     text-align: center;
-    background: linear-gradient(to right,#f6a313,#fd6931)
+    background: linear-gradient(to right, #f6a313, #fd6931)
 }
-.content_left_bottom span:nth-of-type(1){
+
+.content_left_bottom span:nth-of-type(1) {
     font-size: 28px;
     position: relative;
     top: 2px;
-}    
+}
+
+/* contentRight */
+.msgTitle {
+    width: 924px;
+    margin: 10px auto 0;
+    line-height: 60px;
+    font-size: 22px;
+    color: #333;
+    border-bottom: 1px solid #e9e9e9;
+    position: relative;
+    overflow: hidden;
+}
+
+.msgContent {
+    width: 924px;
+    min-height: 606px;
+    padding-bottom: 132px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* 分页 */
+.orderPage {
+    padding: 42px 0 58px;
+    text-align: center;
+}
+
+.orderSH,
+.orderSI {
+    width: 60px;
+    line-height: 27px;
+    border: 1px solid #ddd;
+    border-radius: 27px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.orderSI {
+    border-color: #fb6026;
+    background: #fb6026;
+    color: #fff;
+}
+
+.orderNum {
+    display: inline-block;
+    width: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.orderNum:hover {
+    background: #fb6026;
+    border-color: #fb6026;
+    color: #fff;
+}
+
+.orderNumActive {
+    background: #fb6026;
+    border-color: #fb6026;
+    color: #fff;
+}

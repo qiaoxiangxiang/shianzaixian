@@ -6,10 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>个人信息</title>
     <script src="../../js/jquery.js"></script>
+    <!-- 省市区 插件 -->
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <script src="../../js/distpicker/bootstrap.js"></script>
+    <script src="../../js/distpicker/distpicker.data.js"></script>
+    <script src="../../js/distpicker/distpicker.js"></script>
+    <script src="../../js/distpicker/main.js"></script>
+    <!-- 其他插件 -->
     <link rel="stylesheet" href="../../css/select.css">
     <link rel="stylesheet" href="../../css/font/iconfont.css">
     <link rel="stylesheet" href="../../css/common.css">
     <script src="../../js/JqSelect.js"></script>
+    
     <!-- 本页 -->
     <link rel="stylesheet" href="../../css/user/userMsg.css">
 </head>
@@ -17,14 +25,143 @@
     <div class="header"></div>
     <div class="content">
         <div class="contentC1">
-            <div class="contentLeft">
-                    
-
-            </div>
+            <div class="contentLeft"></div>
             <div class="contentRight">
                 <div class="msgTitle">个人信息</div>
-                <div>
-                    
+                <div class="msgContent">   
+                    <div class="msgList">
+                        <span class="msgTxt">
+                            <span>*</span>
+                            手机号
+                        </span>
+                        <div class="msgPhone">
+                            <input class="msgInput" type="text" placeholder="请输入手机号">
+                            <span class="msgPhoneHYan">
+                                获取验证码
+                            </span>
+                        </div>
+                        <div class="msgYanZ">
+                                <input type="text" placeholder="验证码">
+                        </div>
+                    </div>
+                    <div class="msgList">
+                        <span class="msgTxt">
+                            <span>*</span>
+                            设置密码
+                        </span>
+                        <div class="msgInputBox">
+                            <input class="msgInput1" type="password" placeholder="请输入密码">
+                        </div>
+                    </div>
+                    <div class="msgList">
+                        <span class="msgTxt">
+                            <span>*</span>
+                            确认密码
+                        </span>
+                        <div class="msgInputBox">
+                            <input class="msgInput1" type="password" placeholder="请确认密码">
+                        </div>
+                    </div>
+                    <div class="msgList">
+                        <span class="msgTxt">
+                            <span>*</span>
+                            真实姓名
+                        </span>
+                        <div class="msgInputBox">
+                            <input class="msgInput1" type="text" placeholder="请输入真实姓名">
+                        </div>
+                    </div>
+                    <div class="msgList">
+                        <span class="msgTxt">
+                            <span>*</span>
+                            身份证号
+                        </span>
+                        <div class="msgInputBox">
+                            <input class="msgInput1" type="text" placeholder="请输入身份证号">
+                        </div>
+                    </div>
+                    <div class="msgList">
+                        <span class="msgTxt">
+                            性别
+                        </span>
+                        <div class="msgInputBox msgSex">
+                            <input type="radio" name="sex" id="msgSex1" checked>
+                            <label for="msgSex1" style="cursor:pointer">
+                                <span class="msgSexChecked"></span>
+                                <span class="msgSexTxt">男</span>
+                            </label>
+                            <input type="radio" name="sex" id="msgSex2">
+                            <label class="msgSex2" for="msgSex2" style="cursor:pointer">
+                                <span class="msgSexChecked"></span>
+                                <span class="msgSexTxt">女</span>
+                            </label>
+                            <span class="msgSexTi">(性别选择确认后，将不能再次修改)</span>
+                        </div>
+                    </div>
+                    <div class="msgList msgHye">
+                        <span class="msgTxt">
+                            行业领域
+                        </span>
+                        <div class="msgInputBox">
+                            <select name="" id="msgHye">
+                                <option value="">课程</option>
+                                <option value="">视频</option>
+                                <option value="">视频</option>
+                                <option value="">视频</option>
+                                <option value="">视频</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="msgList msgHye">
+                        <span class="msgTxt">
+                            岗位
+                        </span>
+                        <div class="msgInputBox">
+                            <select name="" id="msgGwei">
+                                <option value="">课程</option>
+                                <option value="">视频</option>
+                                <option value="">视频</option>
+                                <option value="">视频</option>
+                                <option value="">视频</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="msgList">
+                        <span class="msgTxt">
+                            企业名称
+                        </span>
+                        <div class="msgInputBox">
+                            <input class="msgInput1" type="text" placeholder="请输入企业名称">
+                        </div>
+                    </div>
+                    <div class="msgList">
+                        <span class="msgTxt">
+                            所属省市
+                        </span>
+                        <div class="msgInputBox msgCity">
+                            <div class="container">
+                                <form class="form-inline">
+                                    <div data-toggle="distpicker" id="target">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="province2">Province</label>
+                                            <select class="form-control" id="province2" data-province="---- 选择省 ----"></select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="city2">City</label>
+                                            <select class="form-control" id="city2" data-city="---- 选择市 ----"></select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="district2">District</label>
+                                            <select class="form-control" id="district2" data-district="---- 选择区 ----"></select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msgBtn">
+                        保存
+                    </div>
                 </div>
             </div>
         </div>
@@ -35,6 +172,9 @@
 <script>
     window.onload = function(){
         $('#headSelect').selectric();
+        $('#msgHye').selectric();
+        $('#msgGwei').selectric();
+        
         $("body").css({
             "opacity": 1
         })
@@ -43,6 +183,33 @@
         var height = $(window).height();
         $(".content").css({
             "min-height": height - headerHeight - footerHeight + "px"
+        })
+        // 省市区
+        $('#target').distpicker({
+			province: '---- 你需要选择的省 ----',
+			city: '----你需要选择的城市 ----',
+			district: '---- 你需要选择的区 ----'
+        });
+        // 验证
+        $(".msgPhoneHYan").click(function(){
+            // 正在发送验证码  return
+            if($(this).hasClass("msgPhoneFS")){
+                return;
+            }
+            var self = $(this);
+            var num = 60;
+            var timer = setInterval(function(){
+                num--;
+                if(num <= 0 ){
+                    clearInterval(timer);
+                    self.html("获取验证码");
+                    self.removeClass("msgPhoneFS");
+                }
+                self.html("已发送验证码("+num+")");
+                if(!self.hasClass("msgPhoneFS")){
+                    self.addClass("msgPhoneFS");
+                }
+            },1000)
         })
     }
 </script>

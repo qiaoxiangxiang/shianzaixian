@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人信息</title>
+    <script src="../../js/jquery.js"></script>
+    <!-- 其他插件 -->
+    <link rel="stylesheet" href="../../css/select.css">
+    <link rel="stylesheet" href="../../css/font/iconfont.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <script src="../../js/JqSelect.js"></script>
+    
+    <!-- 本页 -->
+    <link rel="stylesheet" href="../../css/user/payOrder.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="content">
+        <div class="contentC">
+            <div class="content_section">
+                <div class="content_section_top">
+                    <div class="content_section_left">
+                        <p class="content_section_left_p"><img src="../../img/user/dingdan_duihao_07.png" alt="">
+                            订单提交成功，请尽快付款！
+                        </p>
+                        <p class="content_section_left_p_two">
+                            请您在提交订单后的2小时内支付，否则订单会自动取消。
+                        </p>
+                    </div>
+                    <div class="content_section_right"><img src="../../img/user/timer_07.png" alt="">
+                        剩余支付时间： <span class="payOrderTimer">02:00:00</span></div>
+                </div>
+                <div class="payOrderBox">
+                    <div class="content_section_list">
+                        <div class="content_section_list_div courseKe">
+                            <p class="content_section_list_p">
+                                订单号：ZYYS201901091745378382
+                            </p>
+                            <p class="content_section_list_p">
+                                课程名称：2019快速提高班药学套包
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content_section_list">
+                        <div class="content_section_list_div">
+                            <p class="content_section_list_p">
+                                支付方式
+                            </p>
+                            <div class="paymentmethod">
+                                <div class="paymentmethod_div paymentmethod_div_two"><img src="../../img/user/zhifubao_15.png"
+                                        alt="" class="paymentmethod_divimg"> <img src="../../img/user/xuanzezhifu_15.png" alt=""
+                                        class="paymentmethod_img"></div>
+                                <div class="paymentmethod_div"><img src="../../img/user/weixinzhifu_17.png" alt=""
+                                        class="paymentmethod_divimg"> <img src="../../img/user/xuanzezhifu_15.png" alt=""
+                                        class="paymentmethod_img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_section_list">
+                        <div class="content_section_list_div">
+                            <p class="content_section_list_p pricesTxt">
+                                支付金额:
+                            </p>
+                            <div class="prices">
+                                ￥1680
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_section_bottom">
+                        <div class="content_section_bottom_right">
+                            <a href="##">
+                                <div class="placeorder">
+                                    取消订单
+                                </div>
+                            </a>
+                            <a href="##">
+                                <div class="placeorder">
+                                    立即支付
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+<script src="../../js/common.js"></script>
+<script>
+    window.onload = function(){
+        $('#headSelect').selectric();        
+        $("body").css({
+            "opacity": 1
+        })
+        var headerHeight = $(".header").height();
+        var footerHeight = $(".footer").height();
+        var height = $(window).height();
+        $(".content").css({
+            "min-height": height - headerHeight - footerHeight + "px"
+        })
+
+        // 支付切换
+        $(".paymentmethod_divimg").click(function(){
+            $(".paymentmethod_div_two").removeClass("paymentmethod_div_two");
+            $(".paymentmethod_divimg").parent().find(".paymentmethod_img").css({"display":"none"})
+            $(this).parent().find(".paymentmethod_img").css({"display":"block"})
+            $(this).parent().addClass("paymentmethod_div_two");
+
+            // index == 0 支付宝  ==1 微信 默认支付宝 0
+            var index = $(this).parent().index();
+            
+        })
+        // 倒计时
+        // payOrderTimer
+        countDown_H_M_S($(".payOrderTimer"))
+    }
+</script>
+</html>

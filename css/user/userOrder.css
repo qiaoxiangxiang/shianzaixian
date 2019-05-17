@@ -1,0 +1,114 @@
+.content{
+    background: #f3f3f3;
+    padding-bottom: 150px;
+}
+.contentRight{
+    min-height: 810px;
+    background: #fff;
+}
+.msgTitle{
+    width: 924px;
+    margin: 10px auto 0;
+    line-height: 60px;
+    font-size: 22px;
+    color: #333;
+    border-bottom: 1px solid #e9e9e9;
+    position: relative;
+    overflow: hidden;
+}
+.msgTitleTxt{
+    float: left;
+}
+.orderNav{
+    float: right;
+    font-size: 14px;
+    color: #333;
+}
+.orderNav .orderNavTxt{
+    margin-left: 40px;
+    cursor: pointer;
+}
+.orderNav .orderNavTxtActive{
+    color: #fb6026;
+}
+.orderContent{
+    padding-top: 48px;
+    width: 924px;
+    margin: 0px auto;
+}
+.orderTalTop{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.orderTalTop tr{
+    width: 100%;
+    height: 37px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #eeeeee;
+}
+.orderTalTop tr td,.orderTalList tr td{
+    width: 104px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+.orderTalTop tr td:nth-of-type(1),.orderTalList tr td:nth-of-type(1){
+    width: 190px;
+}
+.orderTalList{
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+}
+.orderTalList tr{
+    height: 130px;
+}
+.orderTalList tr:nth-of-type(1){
+    background: #f9f9f9;
+    color: #666;
+    height: 34px;
+}
+.orderTalList tr td{
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 12px;
+    color: #333;
+}
+.orderTalList tr:nth-of-type(1) td:nth-last-of-type(1){
+    border-right: none;
+}
+.orderTalList tr:nth-of-type(2) td:nth-last-of-type(1){
+    border-bottom: none;
+    border-right: none;
+}
+.orderTalList tr:nth-last-of-type(1) td{
+    border-bottom: none;
+}
+.orderTalList:nth-last-of-type(1) tr:nth-last-of-type(1) td{
+    border-bottom: 1px solid #e6e6e6;
+}
+.orderTalList:nth-last-of-type(1) tr:nth-last-of-type(2) td{
+    border-bottom: 1px solid #e6e6e6;
+}
+.orderTalList tr:nth-of-type(1) td:nth-of-type(1){
+    width: 913px;
+    padding-left: 12px;
+    text-align: left;
+}
+.orderTalList tr .orderYou{
+    color: #ff5656;
+}
+.orderTalList tr .orderPrice{
+    font-weight: bold;
+}
+.orderTalList tr .orderYif{
+    color: #3a98ed
+}
+.detel,.QXDD,.SQTK{
+    cursor: pointer;
+    padding: 1px 0;
+    display: inline-block;
+}
+.detel:hover,.QXDD:hover,.SQTK:hover{
+    color: #fb6026;
+}

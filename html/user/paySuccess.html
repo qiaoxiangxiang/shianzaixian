@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人信息</title>
+    <script src="../../js/jquery.js"></script>
+    <!-- 其他插件 -->
+    <link rel="stylesheet" href="../../css/select.css">
+    <link rel="stylesheet" href="../../css/font/iconfont.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <script src="../../js/JqSelect.js"></script>
+    
+    <!-- 本页 -->
+    <link rel="stylesheet" href="../../css/user/paySuccess.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="content">
+        <div class="contentC">
+            <div class="successBox">
+                <div class="successImg">
+                    <img src="../../img/user/goumaichenggong_07.jpg" alt="">
+                </div>
+                <div class="successTxt">您的订单支付成功</div>
+                <div class="successCourse">
+                    <div class="successSP">
+                        <span>商&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;品：</span>
+                        <span>全面精讲班</span>
+                    </div>
+                    <div class="successKM">
+                        <span>所选科目：</span>
+                        <span>中西医助理医师</span>
+                    </div>
+                </div>
+                <div class="successBtn">
+                    <a href="#" class="successZT">继续去购买</a>
+                    <a href="#" class="successJX">查看订单状态</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+<script src="../../js/common.js"></script>
+<script>
+    window.onload = function(){
+        $('#headSelect').selectric();        
+        $("body").css({
+            "opacity": 1
+        })
+        var headerHeight = $(".header").height();
+        var footerHeight = $(".footer").height();
+        var height = $(window).height();
+        $(".content").css({
+            "min-height": height - headerHeight - footerHeight + "px"
+        })
+    }
+</script>
+</html>

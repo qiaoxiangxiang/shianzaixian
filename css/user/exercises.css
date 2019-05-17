@@ -1,0 +1,138 @@
+.content{
+    background: #f3f3f3;
+    padding-bottom: 150px;
+}
+.contentRight{
+    min-height: 810px;
+    background: #fff;
+}
+
+/* 试题列表 */
+.exercisesList{
+    height: 55px;
+    padding: 25px 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+.exerciseTxt{
+    width: 600px;
+    line-height: 30px;
+    float: left;
+}
+.exerciseBtns{
+    float: right;
+    width: 298px;
+}
+/* 左侧文字 */
+.exerciseTxt1{
+    font-size: 16px;
+    color: #333;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.exerciseTxt2{
+    font-size: 12px;
+    color: #777;
+}
+.exerciseTxt2_defen{
+    margin-left: 26px;
+}
+.jigeFS{
+    font-size: 18px;
+    color: #4dc71e;
+}
+.NoJigeFS{
+    font-size: 18px;
+    color: #fb6026 ;
+}
+.exerciseTxt3{
+    font-size: 12px;
+    color: #777;
+}
+/* 右侧按钮 */
+.exerciseBtn1,.exerciseBtnT,.exerciseBtnC,.exerciseBtnD{
+    width: 88px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    border: 1px solid #e9e9e9;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.exerciseBtn1{
+    color: #666;
+    border-color: #e9e9e9;
+}
+.exerciseBtn1:hover{
+    color: #fb6026;
+    border-color: #fb6026;
+}
+.exerciseBtnT{
+    background: #56b92a;
+    border-color: #56b92a;
+    color: #fff;
+}
+.exerciseBtnC{
+    background: #288ce6;
+    border-color: #288ce6;
+    color: #fff;
+}
+.exerciseBtnD{
+    background: #fb6026;
+    border-color: #fb6026;
+    color: #fff;
+}
+.exerciseBtnGray{
+    background: #ccc;
+    border-color:  #ccc;
+    position: relative;
+}
+.IsexerciseBtn{
+    display: none;
+}
+/* 提示 */
+.exerciseTishi{
+    width: 180px;
+    height: 110px;
+    background: #fff;
+    box-shadow: 0 0 30px #ddd;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -55px;
+    margin-left: -175px;
+    border-radius: 5px;
+    display: none;
+}
+.exerciseSj{
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    border-width: 12px 0 12px 12px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    margin-top: -11px;
+}
+.exerciseIcon{
+    font-size: 35px;
+    color: #eb2c2c;
+    margin: 14px 0 8px;
+}
+.exerciseTStxt{
+    width: 145px;
+    margin: 0 auto 0;
+    font-size: 12px;
+    color: #eb2c2c;
+    line-height: 16px;
+}
+.exerciseBtnGray:hover .exerciseTishi{
+    display: block;
+}
+
+/* 分页 */
+.orderPage{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

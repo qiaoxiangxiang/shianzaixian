@@ -1,0 +1,59 @@
+.content{
+    background: #f3f3f3;
+    padding-bottom: 150px;
+}
+.contentRight{
+    min-height: 810px;
+    background: #fff;
+}
+
+.certificateBox{
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.certificateList{
+    width: 424px;
+    height: 314px;
+    float: left;
+    margin: 29px 19px;
+    cursor: pointer;
+}
+.certificateImg{
+    width: 100%;
+    display: block;
+}
+.certificateTxt{
+    width: 422px;
+    line-height: 52px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e9e9e9;
+}
+.certificateTxt1{
+    float: left;
+    margin-left: 16px;
+    font-size: 16px;
+    color: #333;
+}
+.certificateTxt2{
+    float: right;
+    margin-right: 16px;
+    font-size: 13px;
+    color: #fb6026;
+}
+.certificateIcon{
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+.certificateList:hover .certificateTxt1{
+    color: #fb6026;
+}
+
+/* 分页 */
+.orderPage{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人信息</title>
+    <script src="../../js/jquery.js"></script>
+    <!-- 其他插件 -->
+    <link rel="stylesheet" href="../../css/select.css">
+    <link rel="stylesheet" href="../../css/font/iconfont.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <script src="../../js/JqSelect.js"></script>
+    
+    <!-- 本页 -->
+    <link rel="stylesheet" href="../../css/user/certificate.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="content">
+        <div class="contentC1">
+            <div class="contentLeft"></div>
+            <div class="contentRight">
+                <div class="msgTitle">我的证书</div>
+                <div class="msgContent">
+                    <div class="certificateBox">
+                        <!-- 列表 -->
+                        <div class="certificateList">
+                        <img class="certificateImg" src="../../img/user/certificate1.png" alt="">
+                        <div class="certificateTxt">
+                            <span class="certificateTxt1">
+                                2016年继续教育学习证明
+                            </span>
+                            <a class="certificateTxt2">
+                                <span class="iconfont certificateIcon">&#xe6a5;</span>
+                                打印
+                            </a>
+                        </div>
+                    </div>
+                    <div class="certificateList">
+                        <img class="certificateImg" src="../../img/user/certificate1.png" alt="">
+                        <div class="certificateTxt">
+                            <span class="certificateTxt1">
+                                2016年继续教育学习证明
+                            </span>
+                            <a class="certificateTxt2">
+                                <span class="iconfont certificateIcon">&#xe6a5;</span>
+                                打印
+                            </a>
+                        </div>
+                    </div>
+                    <div class="certificateList">
+                        <img class="certificateImg" src="../../img/user/certificate1.png" alt="">
+                        <div class="certificateTxt">
+                            <span class="certificateTxt1">
+                                2016年继续教育学习证明
+                            </span>
+                            <a class="certificateTxt2">
+                                <span class="iconfont certificateIcon">&#xe6a5;</span>
+                                打印
+                            </a>
+                        </div>
+                    </div>
+                    <div class="certificateList">
+                            <img class="certificateImg" src="../../img/user/certificate1.png" alt="">
+                            <div class="certificateTxt">
+                                <span class="certificateTxt1">
+                                    2016年继续教育学习证明
+                                </span>
+                                <a class="certificateTxt2">
+                                    <span class="iconfont certificateIcon">&#xe6a5;</span>
+                                    打印
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 分页器 -->
+                    <div class="orderPage">   
+                        <!-- 选中 orderNumActive -->
+                        <span class="orderSH">上一页</span>
+                        <span class="orderNum orderNumActive">1</span>
+                        <span class="orderNum">2</span>
+                        <span class="orderNum">3</span>
+                        <span class="orderNum">4</span>
+                        <span class="orderSI">下一页</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+<script src="../../js/common.js"></script>
+<script>
+    window.onload = function(){
+        $('#headSelect').selectric();    
+        $("body").css({
+            "opacity": 1
+        })
+        var headerHeight = $(".header").height();
+        var footerHeight = $(".footer").height();
+        var height = $(window).height();
+        $(".content").css({
+            "min-height": height - headerHeight - footerHeight + "px"
+        })
+    }
+</script>
+</html>

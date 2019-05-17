@@ -1,0 +1,175 @@
+.content {
+    background: url('../../img/course/shopCar.png')no-repeat top center #f3f3f3;
+    padding-bottom: 150px;
+    min-height: 728px;
+}
+.contentC{
+    background: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.shopCarTitle{
+    width: 1200px;
+    margin: 0 auto;
+}
+.shopCarBox{
+    width: 1146px;
+    margin: 0 auto;
+    padding:  40px 0 76px;
+}
+.shopCarTitle{
+    line-height: 112px;
+    font-size: 16px;
+    color: #fff;
+}
+.shopCarTitle .shopCarTitleTxt{
+    font-size: 30px;
+    margin-right: 38px;
+}
+.shopCarTal{
+    width: 100%;
+}
+.shopCarTal tr:nth-of-type(1){
+    background: #f0f0f0;
+}
+.shopCarTal tr td{
+    width: 144px;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #e9e9e9;
+}
+.shopCarTal tr:nth-of-type(1) td{
+    padding: 0;
+    line-height: 47px;
+}
+.shopCarTal tr td:nth-of-type(1){
+    width: 80px;
+}
+.shopCarTal tr td:nth-of-type(2){
+    width: 340px;
+}
+
+.checkedX{
+    width: 10px;
+    line-height: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    position: relative;
+    left: -12px;;
+}
+.shopCarTal tr:nth-of-type(1) .checkedX{
+    left: 0;
+}
+.checkBox{
+    display: none;
+}
+.checkBox:checked+label{
+    background: #0299ec;
+}
+.carCourse{
+    position: relative;
+    overflow: hidden;
+}
+.carCourse img{
+    float: left;
+    width: 160px;
+}
+.carCourseTxt{
+    float: left;
+    width: 162px;
+    margin-left: 18px;
+    text-align: left;
+}
+.carCourseBan{
+    font-size: 18px;
+    color: #333;
+}
+.carCourseKe{
+    font-size: 12px;
+    color: #0299ec;
+    margin: 16px 0 8px;
+}
+.carCourseZpin{
+    width: 48px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #ff4e00;
+    border: 1px solid #ff4e00;
+    border-radius: 3px;
+    text-align: center;
+}
+.shopCarTal tr .carPrice,.shopCarTal tr .carCaozuo{
+    color: #ff5613;
+}
+.carCaozuoX{
+    font-size: 12px;
+    font-weight: 600;
+}
+.carAdd{
+    width: 130px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+}
+.carAdd span{
+    display: inline-block;
+    width: 43px;
+    height: 36px;
+    float: left;
+}
+.shopCarB{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: #fff;
+}
+.shopCarBBox{
+    width: 1200px;
+    position: relative;
+    overflow: hidden;
+    margin:  0 auto;
+}
+.shopCarSC,.shopCarJSBtn{
+    display: inline-block;
+    width: 168px;
+    line-height: 52px;
+    text-align: center;
+    margin-top: 22px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.shopCarSC{
+    float: left;
+    color: #fb6026;
+    background: #fef8f0;
+    border: 1px solid #fb6026;
+}
+.shopCarJS{
+    float: right;
+}
+.shopCarJSBtn{
+    color: #fff;
+    background: #fb6026;
+    border: 1px solid #fb6026;
+    position: relative;
+    top: -10px;
+}
+.shopCarJSTxt1{
+    font-size: 18px;
+    color: #333;
+}
+.shopCarJSTxt2{
+    font-size: 38px;
+    color: #fb6026;
+    margin-right: 50px;
+}
+.carSChu{
+    cursor: pointer;
+}

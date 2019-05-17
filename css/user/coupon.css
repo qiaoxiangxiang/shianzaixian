@@ -1,0 +1,77 @@
+.content{
+    background: #f3f3f3;
+    padding-bottom: 150px;
+}
+.contentRight{
+    background: #fff;
+}
+.msgContent{
+    padding: 0;
+}
+/* 优惠券 */
+.couponBox{
+    position: relative;
+    overflow: hidden;
+}
+.couponList{
+    width: 214px;
+    height: 226px;
+    background-size: 100% 100%;
+    border-radius: 14px;
+    color: #fff;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 22px;
+    float: left;
+}
+.couponList:nth-of-type(4n){
+    margin-right: 0;
+}
+.youhuiPrice{
+    padding-top: 28px;
+    height: 58px;
+    text-align: center;
+}
+.KYPrice{
+    font-size: 40px;
+    font-weight: bold;
+}
+.MJPrice{
+    font-size: 12px;
+}
+.youhuiB{
+    position: absolute;
+    bottom: 14px;
+    text-align: center;
+    position: absolute;
+    bottom: 14px;
+    text-align: center;
+    left: 50%;
+    margin-left: -75px;
+}
+.youhuiBQ{
+    position: relative;
+    overflow: hidden;
+}
+.youhuiBQ span:nth-of-type(1){
+    float: left;
+    display: inline-block;
+}
+.youhuiBQ span:nth-of-type(2){
+    float: right;
+    display: inline-block;
+    text-align: left;
+}
+/* 底部提示 */
+.couponBtishi{
+    line-height: 30px;
+    margin-top: 30px;
+}
+.couponBtishi div:nth-of-type(1){
+    font-size: 14px;
+    color: #fb6026;
+}
+.couponBtishi div:nth-of-type(2){
+    font-size: 12px;
+    color: #666;
+}

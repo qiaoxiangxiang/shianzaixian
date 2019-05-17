@@ -1,0 +1,136 @@
+.content{
+    background: #f3f3f3;
+    padding-bottom: 150px;
+}
+.contentRight{
+    min-height: 810px;
+    background: #fff;
+}
+/* 学习记录 */
+.studyList{
+    border-bottom: 1px solid #e9e9e9;
+}
+.studyTop{
+    width: 100%;
+    height: 64px;
+    position: relative;
+    overflow: hidden;
+    padding: 23px 0 23px;
+    line-height: 30px;
+}
+.studyLeft{
+    float: left;
+}
+.studyRight{
+    float: right;
+    font-size: 35px;
+    color: #666;
+}
+.studyTile{
+    font-size: 20px;
+    color: #333;
+}
+.studyTile span:nth-of-type(2){
+    color: #999;
+}
+.studyTimer{
+    font-size: 15px;
+}
+.studyTimer span:nth-of-type(1){
+    color: #fb6026
+}
+.studyTimer span:nth-of-type(2){
+    color: #666;
+    margin-left: 42px;
+}
+.studyJL{
+    display: block;
+    width: 884px;
+    height: 64px;
+    position: relative;
+    overflow: hidden;
+    padding: 23px 20px 23px;
+    line-height: 30px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.studyContent .studyJL:nth-last-of-type(1){
+    border: none;
+}
+.studyBox{
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+.studyJLLeft{
+    float: left;
+    font-size: 16px;
+    color: #333;
+    width: 240px;
+} 
+.studyJLTimer{
+    font-size: 12px;
+}
+.studyJLcenter{
+    float: left;
+    width: 460px;
+}
+.studyJLYX{
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    width: 40px;
+    text-align: right;
+    margin-right: -20px;
+    top: -26px
+}
+.studyJLjindu{
+    padding-top: 26px;
+}
+.studyJLjindu1{
+    display: inline-block;
+    width: 340px;
+    height: 12px;
+    background: #fed2c2;
+    border-radius: 12px;
+    position: relative;
+}
+.studyJLjindu2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 100%;
+    background: #fb6026;
+    border-radius: 12px;
+}
+.NostudyJLjindu{
+    background: #efefef;
+}
+.studyJLZtime{
+    font-size: 14px;
+    color: #333;
+}
+.studyJLXuexi{
+    float: right;
+    font-size: 13px;
+    color: #fb6026;
+    line-height: 32px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #fb6026;
+    border-radius: 32px; 
+    margin-top: 16px;
+}
+.studyJL:hover{
+    background: #ffefe9;
+}
+.studyJL:hover .studyJLLeft,.studyJL:hover .studyJLZtime,.studyJL:hover .studyJLYX{
+    color: #fb6026;
+}
+
+/* 分页 */
+.orderPage{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

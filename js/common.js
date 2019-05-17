@@ -258,29 +258,30 @@ function rand(){
     }
     return validate;
 }
-
-
-var receive_code = '';//随机数
-
-
-//获取从服务器返回的图形验证码值
-function get_g_v_code() {
-    
-   return receive_code;
-}
-/*干扰线的随机x坐标值*/
-function lineX(){
-    var ranLineX=Math.floor(Math.random()*90);
-    return ranLineX;
-}
-
-/*干扰线的随机y坐标值*/
-function lineY(){
-    var ranLineY=Math.floor(Math.random()*40);
-    return ranLineY;
-}
-//从服务器获取随机数
 function get_random_g_v() {
     //绘制
     return  rand();
+}
+// 计时器
+function countDown_H_M_S(timehtml) {
+    //设置时间
+    var h = 0;
+    var m = 0;
+    var s = 0;
+    //获取现在时间 ms
+    var t = 7200;
+    
+    function GetRTime() {
+        t--;
+        if (t > 0) {
+            s = Math.floor(t % 60)>10?Math.floor(t % 60):'0'+Math.floor(t % 60);
+        } else {
+            clearInterval(timer);
+        }
+        h = Math.floor(t / 60 / 60 % 24)>10?Math.floor(t / 60 / 60 % 24):'0'+Math.floor(t / 60 / 60 % 24);
+        m = Math.floor(t / 60 % 60)>10?Math.floor(t / 60 % 60):'0'+Math.floor(t / 60 % 60);
+
+        timehtml.html(h + ":" + m + ":" + s)
+    }
+    var timer = window.setInterval(GetRTime, 1000);
 }

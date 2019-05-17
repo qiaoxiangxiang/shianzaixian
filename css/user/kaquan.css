@@ -1,22 +1,26 @@
-.content{
+.content {
     background: url('../../img/kaquan/beijing.png')no-repeat center center;
 }
-.contentRight{
+
+.contentRight {
     height: 678px;
 }
-.kaquanTop{
+
+.kaquanTop {
     width: 720px;
     height: 74px;
     margin: 0 auto;
 }
-.kaquanTopXian{
+
+.kaquanTopXian {
     width: 100%;
     height: 1px;
     position: relative;
     background: #aaa;
     top: 68px;
 }
-.kaquanBu{
+
+.kaquanBu {
     width: 40px;
     height: 40px;
     border: 1px solid #fff;
@@ -27,24 +31,29 @@
     top: 0;
     margin-top: -20px;
 }
-.kaquanBu:nth-of-type(1){
+
+.kaquanBu:nth-of-type(1) {
     left: 25%;
-    
+
 }
-.kaquanBu:nth-of-type(2){
+
+.kaquanBu:nth-of-type(2) {
     left: 50%;
-    
+
 }
-.kaquanBu:nth-of-type(3){
+
+.kaquanBu:nth-of-type(3) {
     left: 75%;
-    
+
 }
-.kaquanBu>span{
+
+.kaquanBu>span {
     font-size: 20px;
     color: #fff;
     line-height: 40px;
 }
-.kaquanBuTxt{
+
+.kaquanBuTxt {
     position: absolute;
     bottom: -36px;
     width: 100px;
@@ -52,61 +61,76 @@
     margin-left: -50px;
     left: 50%;
 }
+
 /* 切换 */
-.kaquanShu,.kaquanXuan,.kaquanQue{
+.kaquanShu,
+.kaquanXuan,
+.kaquanQue {
     display: none;
 }
-.kaquanActive{
+
+.kaquanActive {
     display: block;
 }
+
 /* 输入卡号 */
-.kaquanShu{
+.kaquanShu {
     width: 785px;
     height: 280px;
     margin: 0 auto;
     padding-bottom: 193px;
     padding-top: 132px;
 }
-.kaquanInput1{
+
+.kaquanInput1 {
     width: 100%;
-    height: 60px; 
+    height: 60px;
     border: 1px solid #fb6026;
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 33px;
 }
-.kaquanInput1 .headCTIput{
+
+.kaquanInput1 .headCTIput {
     width: 100%;
     height: 98%;
     left: 0;
     background: #fff;
     border: none;
 }
-.kaquanInput1 .headCTInput{
+
+.kaquanInput1 .headCTInput {
     width: 80%;
     font-size: 14px;
     color: #aaa;
 }
-.kaquanInput1 .selectric{
+
+.kaquanInput1 .selectric {
     background: #fff;
 }
-.kaquanInput1 .selectric .button,.kaquanInput1 .selectric .label{
+
+.kaquanInput1 .selectric .button,
+.kaquanInput1 .selectric .label {
     background: #fff;
     border-right: 1px solid #eee;
     color: #fb6026;
     height: 60px;
     line-height: 60px;
 }
-.kaquanInput1 .selectric .button:after{
+
+.kaquanInput1 .selectric .button:after {
     border-top-color: #fb6026;
 }
-.kaquanInput1 .selectric .button{
+
+.kaquanInput1 .selectric .button {
     color: #fb6026;
 }
-.kaquanShuQue{
+
+.kaquanShuQue {
     padding-top: 39px;
 }
-.kaquanShuQueJ{
+
+.kaquanShuQueJ {
     width: 158px;
     line-height: 50px;
     text-align: center;
@@ -117,53 +141,64 @@
     border-radius: 10px;
 }
 
-.kaquanBuActive{
+.kaquanBuActive {
     background: #fb6026;
     border: none;
 }
-.kaquanBuActive .kaquanBuTxt{
+
+.kaquanBuActive .kaquanBuTxt {
     color: #fb6026;
 }
+
 /* 选择课程 */
-.kaquanXuan{
+.kaquanXuan {
     width: 924px;
     height: 326px;
     margin: 110px auto 0;
 }
-.kaquanXuanTxt{
+
+.kaquanXuanTxt {
     font-size: 24px;
     color: #333;
     margin-bottom: 28px;
 }
-.kaquanXuanKe{
+
+.kaquanXuanKe {
     width: 100%;
     height: 118px;
     position: relative;
     overflow: hidden;
 }
-.kaquanXuanKeImg{
+
+.kaquanXuanKeImg {
     width: 212px;
     height: 100px;
     padding: 6px;
-    border: 1px solid rgba(255,255,255,0);
+    border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 10px;
     float: left;
     margin-left: 6px;
 }
-.kaquanXuanKeImg:nth-of-type(1){
+
+.kaquanXuanKeImg:nth-of-type(1) {
     margin-left: 0;
 }
-.kaquanXuanKeImg img{
+
+.kaquanXuanKeImg img {
     width: 100%;
 }
-.kaquanXKeActive{
+
+.kaquanXKeActive {
     border-color: #fb6026;
 }
-.kaquanXuanAn{
+
+.kaquanXuanAn {
     text-align: center;
     margin-top: 102px;
 }
-.kaquanXuanQu,.kaquanXuanQue{
+
+.kaquanXuanQu,
+.kaquanXuanQue {
     width: 162px;
     line-height: 50px;
     text-align: center;
@@ -173,30 +208,37 @@
     border-radius: 10px;
     display: inline-block;
 }
-.kaquanXuanQu{
+
+.kaquanXuanQu {
     background: #c1c1c1;
     margin-right: 55px;
 }
+
 /* 选定课 */
-.kaquanQue{
+.kaquanQue {
     margin: 135px auto 0;
 }
-.kaquanQueImg{
-    margin:  0 auto;
+
+.kaquanQueImg {
+    margin: 0 auto;
     text-align: center;
 }
-.kaquanQueImg img{
+
+.kaquanQueImg img {
     width: 282px;
 }
-.kaquanQueTxt{
+
+.kaquanQueTxt {
     text-align: center;
     font-size: 26px;
     color: #fb6026;
-    margin: 28px auto 46px ;
+    margin: 28px auto 46px;
 }
-.kaquanQueAn{
+
+.kaquanQueAn {
     text-align: center;
 }
-.kaquanQueAn .kaquanXuanQu{
+
+.kaquanQueAn .kaquanXuanQu {
     background: #239cee;
 }

@@ -64,7 +64,7 @@
                         <div class="detailCLBox">
                             <!-- 大列表 头部 -->
                             <!-- 选中  detailCLtitleActive -->
-                            <div class="detailCLtitle detailCLtitleActive">
+                            <div class="detailCLtitle">
                                 <div class="detailCLTleft"> 
                                     <span class="iconfont detailIcon">&#xe655;</span>
                                     <span>
@@ -1490,9 +1490,9 @@
             $(this).addClass("detailCourseActive");
         })
         // 下拉列表
-        $(".detailCLtitleActive").find(".detailCLTright").removeClass("detailCLTrightActive");
-        var heightStar = $(".detailCLtitleActive").parent().find(".detailXliBox1").height();
-        $(".detailCLtitleActive").parent().find(".detailXliBox").css({"height":heightStar + "px"})
+        // $(".detailCLtitleActive").find(".detailCLTright").removeClass("detailCLTrightActive");
+        // var heightStar = $(".detailCLtitleActive").parent().find(".detailXliBox1").height();
+        // $(".detailCLtitleActive").parent().find(".detailXliBox").css({"height":heightStar + "px"})
 
         $(".detailCLtitle").click(function(){
             $(".detailCLtitleActive").find(".detailCLTright").addClass("detailCLTrightActive");

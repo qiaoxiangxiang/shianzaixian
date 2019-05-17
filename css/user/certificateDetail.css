@@ -1,0 +1,39 @@
+.content{
+    background: #f3f3f3;
+    padding-bottom: 150px;
+}
+.contentRight{
+    min-height: 810px;
+    background: #fff;
+}
+
+.msgTitleZS{
+    float: left;
+}
+.msgContent{
+    padding-bottom: 50px
+}
+.msgTitleDY{
+    float: right;
+    width: 86px;
+    line-height: 38px;
+    background: #fb6026;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    display: block;
+}
+.certificateImg{
+    width: 834px;
+    margin: 30px auto 38px;
+    display: block;
+}
+.certificateTxt{
+    font-size: 26px;
+    color: #fb6026;
+    text-align: center;
+}
