@@ -61,7 +61,8 @@
     border: 1px solid #999;
     border-radius: 3px;
     position: relative;
-    left: -12px;;
+    left: -12px;
+    cursor: pointer;
 }
 .shopCarTal tr:nth-of-type(1) .checkedX{
     left: 0;
@@ -112,6 +113,7 @@
     font-weight: 600;
 }
 .carAdd{
+	display: inline-block;
     width: 130px;
     line-height: 36px;
     border: 1px solid #ccc;

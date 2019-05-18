@@ -1,0 +1,314 @@
+.content {
+    background: url('../../img/course/shopCar.png')no-repeat top center #f3f3f3;
+    padding-bottom: 150px;
+    min-height: 728px;
+}
+.contentC{
+    background: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.shopCarTitle{
+    width: 1200px;
+    margin: 0 auto;
+}
+.shopCarBox{
+    width: 1146px;
+    margin: 0 auto;
+    padding:  40px 0 0px;
+}
+.shopCarTitle .shopCarTitleTxt{
+	line-height: 112px;
+    font-size: 30px;
+    color: #fff;
+}
+.shopCarTal{
+    width: 100%;
+}
+.shopCarTal tr:nth-of-type(1){
+    background: #f0f0f0;
+}
+.shopCarTal tr td{
+    width: 192px;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #e9e9e9;
+}
+.shopCarTal tr:nth-of-type(1) td{
+    padding: 0;
+    line-height: 47px;
+}
+
+.shopCarTal tr td:nth-of-type(1){
+    width: 372px;
+}
+
+.carCourse{
+    position: relative;
+    overflow: hidden;
+}
+.carCourse img{
+    float: left;
+    width: 160px;
+}
+.carCourseTxt{
+    float: left;
+    width: 162px;
+    margin-left: 18px;
+    text-align: left;
+}
+.carCourseBan{
+    font-size: 18px;
+    color: #333;
+}
+.carCourseKe{
+    font-size: 12px;
+    color: #0299ec;
+    margin: 16px 0 8px;
+}
+.carCourseZpin{
+    width: 48px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #ff4e00;
+    border: 1px solid #ff4e00;
+    border-radius: 3px;
+    text-align: center;
+}
+.shopCarTal tr .carPrice,.shopCarTal tr .carCaozuo{
+    color: #ff5613;
+}
+.carCaozuoX{
+    font-size: 12px;
+    font-weight: 600;
+}
+.carAdd{
+	display: inline-block;
+    width: 130px;
+    line-height: 36px;
+    position: relative;
+    overflow: hidden;
+}
+.carAdd span{
+    display: inline-block;
+    width: 43px;
+    height: 36px;
+}
+.shopCarB{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: #fff;
+}
+.shopCarBBox{
+    width: 1200px;
+    position: relative;
+    overflow: hidden;
+    margin:  0 auto;
+}
+.shopCarJSBtn{
+    display: inline-block;
+    width: 168px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    float: right;
+    color: #fff;
+    background: #fb6026;
+    border: 1px solid #fb6026;
+    position: relative;
+    top: 0px;
+    right: 20px;
+}
+/*优惠券*/
+.youhuiBox{
+	width: 1146px;
+	margin: 0 auto;
+}
+.YHJihuo{
+	margin-bottom: 28px
+}
+.youhuiTitle{
+	font-size: 20px;
+	color: #333;
+	margin: 38px auto 26px;
+}
+.JihuoTxt{
+	font-size: 14px;
+	color: #333;
+}
+.JihuoKH,.JihuoMi,.JihuoYZ{
+	border: 1px solid #e9e9e9;
+	outline: none;
+	height: 34px;
+	padding-left: 10px;
+	font-size: 14px;
+	color: #999;
+	margin-left: 15px;
+	border-radius: 5px;
+}
+.JihuoKH{
+	width: 255px;
+	margin-left: 0;
+}
+.JihuoMi{
+	width: 255px;
+}
+.JihuoYZ{
+	width: 165px;
+}
+.JihuoYZM{
+	display: inline-block;
+    width: 78px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 22px;
+    color: #7d3b2c;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    position: relative;
+    top: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.JihuoBtn{
+	display: inline-block;
+	width: 90px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+    background: #fb6026;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+/*优惠表格*/
+.YHlist{
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e9e9e9;
+}
+.YHlist .JihuoTxt{
+	margin-bottom: 17px;
+}
+.YHlist .shopCarTal tr{
+	height: 45px;
+    margin-top: 5px;
+    display: block;
+    line-height: 45px;
+}
+.YHlist .shopCarTal tr:nth-of-type(1){
+	margin-top: 0;
+}
+.YHlist .shopCarTal tr:nth-of-type(2){
+	margin-top: 17px;
+}
+.YHlist .shopCarTal tr td{
+	width: 227px;
+    padding: 0;
+    /* margin-top: 5px; */
+    border: none;
+    display: inline-block;
+    float: left;
+}
+.YHlist .shopCarTal tr td:nth-of-type(1){
+	text-align: left;
+}
+.YHlist .shopCarTal tr:nth-of-type(1){
+	background: #ffefe9;
+}
+.YHlist .shopCarTal tr:nth-of-type(1) td{
+	padding: 0;
+}
+.YHlist .shopCarTal tr:nth-of-type(1) td:nth-of-type(1) input{
+	display: block;
+	opacity: 0;
+}
+.checkedX,.checkedF{
+    width: 10px;
+    line-height: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    left: 10px;
+}
+.checkBox{
+    display: none;
+}
+.checkBox:checked+label{
+    background: #0299ec;
+}
+/*分享码*/
+.fenXMa,.PriceBox{
+	width: 1146px;
+	margin: 50px auto 0;
+	border-bottom: 1px solid #e9e9e9;
+	
+}
+.fenXMa .fenXMaTop{
+	font-size: 20px;
+}
+.fenXMa .JihuoKH{
+	border: none;
+    background: #f7f7f7;
+    width: 840px;
+    height: 45px;
+    padding-left: 20px;
+}
+.fenXMa .JihuoBtn{
+	width: 136px;
+	line-height: 45px;
+}
+.fenXMaBox{
+	padding: 10px 0 48px;
+}
+.fenXMaList{
+	margin: 10px 0 0 115px;
+}
+.fenXMaList .fenXTxt{
+	margin-left: 15px;
+	font-size: 14px;
+	color: #333;
+}
+.fenXMaList .fenXPrice{
+	color: #fb6026;
+}
+/* 价格*/
+.PriceBox{
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.PriceRight{
+	float: right;
+	height: 216px;
+}
+.PriceTxt{
+	text-align: right;
+	margin-top: 36px;
+	font-size: 16px;
+	color: #333;
+}
+.PriceTxt:nth-of-type(3){
+	margin-top: 22px;
+}
+.PriceTxt:nth-of-type(3) .PriceTxt2{
+	font-size: 30px;
+	color: #fb6026;
+}
+.PriceTxt2{
+	display: inline-block;
+	width: 170px;
+}
+
+.shopCarBBox{
+	margin-top: 40px;
+}

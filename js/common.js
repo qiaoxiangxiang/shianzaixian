@@ -247,20 +247,26 @@ $(".contentLeft").append(`
 // 公共代码
 //canvas图形验证码
 //随机数
-function rand(){
+function rand(KG){
     var str="abcdefghijklmnopqrstuvwxyz0123456789QWERTYUIOPLKJHGFDSAZXCVBNM";
     var arr=str.split("");
     var validate="";
     var ranNum;
     for(var i=0;i<4;i++){
         ranNum=Math.floor(Math.random()*36);   //随机数在[0,35]之间
-        validate = validate + arr[ranNum] + " ";
+        //判断验证码是够加空格
+        if(KG){
+        	validate = validate + arr[ranNum];
+        }else{
+        	validate = validate + arr[ranNum] + " ";
+        }
+        
     }
     return validate;
 }
-function get_random_g_v() {
+function get_random_g_v(KG) {
     //绘制
-    return  rand();
+    return  rand(KG);
 }
 // 计时器
 function countDown_H_M_S(timehtml) {
