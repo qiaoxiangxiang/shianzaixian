@@ -29,7 +29,9 @@ a {
     height: auto;
     display: inline-block;
 }
-
+a:hover{
+	text-decoration: none;
+}
 .head,
 .headTop,
 .headContent {
@@ -302,17 +304,17 @@ a {
 .headCBLlist {
     width: 234px;
     padding-left: 22px;
-    background: rgba(0, 0, 0, 0.9);
-    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 57.5px;
     line-height: 50px;
 }
 
 .headCBLlist a {
     font-size: 15px;
-    color: #fff;
+    color: #eee;
     width: 100%;
     position: relative;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
 .headCBLlist:nth-last-of-type(1) a {
@@ -327,6 +329,7 @@ a {
     position: absolute;
     right: 17px;
     top: 15px;
+    opacity: .5;
 }
 
 
@@ -498,9 +501,9 @@ a {
 
 .contentRight {
     width: 983px;
-    min-height: 824px;
+    min-height: 808px;
     float: left;
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .9);
 }
 
 .content_left_top {
@@ -526,7 +529,9 @@ a {
     color: #fb6026;
     margin-left: -10px;
 }
-
+.contentLTli:hover{
+	text-decoration: none;
+}
 .contentLTli>span:nth-of-type(1) {
     font-size: 28px;
     position: relative;
@@ -537,6 +542,7 @@ a {
 .contentLTli1,
 .contentLTli {
     border-bottom: 1px solid #ddd;
+    display: block;
 }
 
 .contentLTli1:nth-last-of-type(1) {
@@ -549,13 +555,15 @@ a {
     color: #333;
 }
 
-.contentLTli1>div {
+.contentLTli1>a {
     padding: 15px 0 15px 54px;
     width: 143px;
     position: relative;
+    display: block;
+     color: #333;
 }
 
-.contentLTli1>div>.commonQJ {
+.contentLTli1>a>.commonQJ {
     position: absolute;
     top: 14px;
     right: 20px;
@@ -563,12 +571,13 @@ a {
     color: #333;
 }
 
-.contentLTli1>div:hover {
+.contentLTli1>a:hover {
     background: #fb6026;
     color: #fff;
+    text-decoration: none;
 }
 
-.contentLTli1>div:hover .commonQJ {
+.contentLTli1>a:hover .commonQJ {
     color: #fff;
 }
 

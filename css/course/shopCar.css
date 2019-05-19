@@ -1,3 +1,13 @@
+.contentLTli1 .gouwuche {
+    background: #fb6026;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contentLTli1 .gouwuche .commonQJ {
+    color: #fff;
+}
+
 .content {
     background: url('../../img/course/shopCar.png')no-repeat top center #f3f3f3;
     padding-bottom: 150px;

@@ -1,3 +1,13 @@
+.contentLTli1 .youhui {
+    background: #fb6026;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contentLTli1 .youhui .commonQJ {
+    color: #fff;
+}
+
 .content{
     background: #f3f3f3;
     padding-bottom: 150px;
@@ -48,6 +58,8 @@
     text-align: center;
     left: 50%;
     margin-left: -75px;
+    font-size: 12px;
+    color: #fff;
 }
 .youhuiBQ{
     position: relative;

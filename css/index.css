@@ -60,6 +60,7 @@
 
 .yonghuTopRTxt {
     float: right;
+    color: #333;
 }
 
 .yonghuTopL img {
@@ -112,7 +113,7 @@
     border-bottom: 1px solid #ddd;
 }
 .yonghuTopxinxi1{
-    padding-top: 17px;
+    padding-top: 15px;
     padding-left: 20px;
     width: 260px;
     height: 18px;
@@ -294,13 +295,14 @@
     width: 33%;
     height: 49.5%;
     float: left;
-    border-right: 1px solid #eee; 
+    border-right: 1px solid rgba(255,255,255,.3);
+    position: relative; 
 }
 .gonggexinxi:nth-of-type(3n){
     border: none
 }
 .gonggexinxi:nth-of-type(1),.gonggexinxi:nth-of-type(2),.gonggexinxi:nth-of-type(3){
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(255,255,255,.3);
 }
 .gonggeFG,.gonggeFG1{
     width: 10px;
@@ -326,6 +328,9 @@
     text-align: center;
     font-size: 13px;
     color: #fff;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
 }
 .gonggexinxi:nth-of-type(1) .gonggeImg,.gonggexinxi:nth-of-type(2) .gonggeImg,.gonggexinxi:nth-of-type(5) .gonggeImg{
     width: 27px;
@@ -378,6 +383,9 @@
 }
 .xinwenLeft_TList .headCBCXian{
     bottom: 0;
+}
+.xinwenLeft_TList:hover{
+	color: #fe7109
 }
 .xinwenLeft_TList:hover .headCBCXian{
     display: inline-block;
@@ -538,7 +546,7 @@
 /* 课程 */
 .contontKeBox{
     width: 100%;
-    height: 875px;
+    height: 826px;
     background: #f8f8f8;
 }
 .contontKe{
@@ -550,7 +558,7 @@
 .contontKeTop{
     position: relative;
     overflow: hidden;
-    margin: 48px 0 28px;
+    margin: 48px 0 0;
 }
 .contontKeLei{
     float: left;
@@ -579,15 +587,24 @@
 .contontKeLists{
     position: relative;
     overflow: hidden;
+    padding-top: 28px;
 }
 .contontKeList{
     width: 282px;
-    height: 306px;
+    height: 278px;
     float: left;
     margin-left: 24px;
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
+    transition: all .2s;
+    margin-top: 0;
+}
+.contontKeList:hover{
+	margin-top: -10px;
+}
+.contontKeDK .contontKeList{
+	height: 294px;
 }
 .contontKeList:nth-of-type(1){
     margin-left: 0;
@@ -676,9 +693,14 @@
 }
 .contontShiList{
     width: 172px;
-    height: 286px;
+    height: 300px;
     float: left;
     margin-left: 21px;
+    margin-top: 0;
+    transition: all .2s;
+}
+.contontShiList:hover{
+	margin-top: -10px;
 }
 .contontShiTxt{
     margin: 10px 0 6px;
@@ -762,4 +784,10 @@
 .contentBtxt span{
     font-size: 40px;
     color: #fb6026;
+}
+.xinwenLeft_TListActive .headCBCXian{
+	display: inline-block;
+}
+.xinwenLeft_TListActive{
+	color: #fe7109
 }

@@ -1,5 +1,20 @@
+.contentLTli1 .msg {
+    background: #fb6026;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contentLTli1 .msg .commonQJ {
+    color: #fff;
+}
+
 *{
     box-sizing: initial;
+}
+.headCTRImg {
+    width: 28px;
+    position: relative;
+    top: -10px;
 }
 .label{
     padding: 0;

@@ -26,7 +26,7 @@ $(".header").append(`
                         <span class="headTopShu">|</span>
                         <a href="#"><span class="headToptxt1">买课</span></a>
                     </div>
-                    <a href="#">
+                    <a href="/course/shopCar.html">
                         <div class="headTopCRR">
                             <img class="headTopCRRImg" src="/img/home/gouwuche.png" alt="">
                             <span class="headTopCRRTxt">购物车</span>
@@ -44,7 +44,7 @@ $(".header").append(`
                 </div>
                 <div class="headCTIput">
                     <div class="headCTselect">
-                        <select name="" id="headSelect">
+                        <select class="headCTRight" name="" id="headSelect">
                             <option value="">课程</option>
                             <option value="">视频</option>
                             <option value="">视频</option>
@@ -59,15 +59,13 @@ $(".header").append(`
                         <img class="headCTsousuoImg" src="/img/home/sousuo.png" alt="">
                     </div>
                 </div>
-                <div class="headCTRight">
-                    <a href="#">
-                        <img class="headCTRImg" src="/img/home/app.png" alt="">
-                        <h3 class="headCTH3">
-                            <span class="headCTRtxt">官方APP</span><br/>
-                            <span class="headCTRtxt1">在线学习</span>
-                        </h3>
-                    </a>
-                </div>
+                <a href="#" class="headCTRight">
+                    <img class="headCTRImg" src="/img/home/app.png" alt="">
+                    <h3 class="headCTH3">
+                        <span class="headCTRtxt">官方APP</span><br/>
+                        <span class="headCTRtxt1">在线学习</span>
+                    </h3>
+                </a>
             </div>
             <div class="headCB">
                 <div class="headCBL">
@@ -85,7 +83,7 @@ $(".header").append(`
                 </div>
                 <div class="headCBC">
                     <span class="headCBCNav">
-                        <a href="#">
+                        <a href="/index.html">
                             首页
                         <span class="headCBCXian"></span>
                     </a>
@@ -184,65 +182,65 @@ $(".footer").append(`
 `)
 $(".contentLeft").append(`
 <div class="content_left_top">
-    <div class="contentLTli">
+    <a href="#" class="contentLTli">
         <span class="iconfont">&#xe608;</span>
         <span>学习中心</span>
-    </div>
+    </a>
     <div class="contentLTli1">
-        <div>
+        <a class="yigou" href="../../html/user/alreadyBuy.html">
             <span>已购课程</span>
             <span class="commonQJ iconfont">&#xe633;</span>
-        </div>
-        <div>
+        </a>
+        <a class="jilu" href="../../html/user/study.html">
             <span>学习记录</span>
             <span class="commonQJ iconfont">&#xe633;</span>
-        </div>
-        <div>
+        </a>
+        <a class="kaoshi" href="../../html/user/exercises.html">
             <span>我的考试</span>
             <span class="commonQJ iconfont">&#xe633;</span>
-        </div>
+        </a>
     </div>
-    <div class="contentLTli">
+    <a href="../../html/user/certificate.html" class="contentLTli">
         <span class="iconfont">&#xe639;</span>
         <span>我的证书</span>
-    </div>
-    <div class="contentLTli">
+    </a>
+    <a href="#" class="contentLTli">
         <span class="iconfont">&#xe662;</span>
         <span>我的交易</span>
-    </div>
+    </a>
     <div class="contentLTli1">
-        <div>
+        <a class="dingdan" href="../../html/user/userOrder.html">
             <span>我的订单</span>
             <span class="commonQJ iconfont">&#xe633;</span>
-        </div>
-        <div>
+        </a>
+        <a class="gouwuche" href="../../html/course/shopCar.html">
             <span>我的购物车</span>
             <span class="commonQJ iconfont">&#xe633;</span>
-        </div>
-        <div>
+        </a>
+        <a class="youhui" href="../../html/user/coupon.html">
             <span>优惠券</span>
             <span class="commonQJ iconfont">&#xe633;</span>
-        </div>
+        </a>
     </div>
-    <div class="contentLTli">
+    <a href="#" class="contentLTli">
         <span class="iconfont">&#xec4d;</span>
         <span>账户与安全</span>
-    </div>
+    </a>
     <div class="contentLTli1">
-        <div>
+        <a class="msg" href="../../html/user/userMsg.html">
             <span>个人信息</span>
             <span class="commonQJ iconfont">&#xe633;</span>
-        </div>
-        <div>
+        </a>
+        <a class="mima" href="../../html/user/password.html">
             <span>重置密码</span>
             <span class="commonQJ iconfont">&#xe633;</span>
-        </div>
+        </a>
     </div>
     </div>
-    <div class="content_left_bottom">
-    <span class="iconfont">&#xe601;</span>
-    激活码
-</div>
+    <a href="../../html/user/kaquan.html" class="content_left_bottom">
+	    <span class="iconfont">&#xe601;</span>
+	    激活码
+</a>
 `)
 // 公共代码
 //canvas图形验证码
@@ -290,4 +288,32 @@ function countDown_H_M_S(timehtml) {
         timehtml.html(h + ":" + m + ":" + s)
     }
     var timer = window.setInterval(GetRTime, 1000);
+}
+
+
+//本地观看 带有域名可删除
+var num = window.location.href.indexOf("shianzaixian")+12;
+var url = window.location.href;
+console.log();
+if(url.substring(num+1,num+6) == "index"){
+	for(var i=0;i<$(".header").find("img").length;i++){
+		$(".header").find("img").eq(i).attr("src","."+$(".header").find("img").eq(i).attr("src"))
+	}
+	for(var i=0;i<$(".footer").find("img").length;i++){
+		$(".footer").find("img").eq(i).attr("src","."+$(".footer").find("img").eq(i).attr("src"))
+	}
+	for(var i=0;i<$(".contentLeft").find("img").length;i++){
+		$(".contentLeft").find("img").eq(i).attr("src","."+$(".contentLeft").find("img").eq(i).attr("src"))
+	}
+//	$(".header").find("img").attr("src","."+$(".header").find("img").attr("src"))
+}else{
+	for(var i=0;i<$(".header").find("img").length;i++){
+		$(".header").find("img").eq(i).attr("src","../.."+$(".header").find("img").eq(i).attr("src"))
+	}
+	for(var i=0;i<$(".footer").find("img").length;i++){
+		$(".footer").find("img").eq(i).attr("src","../.."+$(".footer").find("img").eq(i).attr("src"))
+	}
+	for(var i=0;i<$(".contentLeft").find("img").length;i++){
+		$(".contentLeft").find("img").eq(i).attr("src","../.."+$(".contentLeft").find("img").eq(i).attr("src"))
+	}
 }

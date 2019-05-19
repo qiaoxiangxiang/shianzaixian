@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
 
-    <script src="/js/jquery.js"></script>
+    <script src="./js/jquery.js"></script>
     <link rel="stylesheet" href="./css/select.css">
     <link rel="stylesheet" href="./css/font/iconfont.css">
     <link rel="stylesheet" href="./css/common.css">
@@ -162,9 +162,10 @@
             <div class="xinwen">   
                 <div class="xinwenLeft">
                     <div class="xinwenLeft_title">
-                        <a href="#" class="xinwenLeft_TList">
+                    	<!--选各种 xinwenLeft_TListActive -->
+                        <a href="#" class="xinwenLeft_TList xinwenLeft_TListActive">
                                 科普辟谣                
-                            <span class="headCBCXian"></span>
+                            <span class="headCBCXian headCBCXianActive"></span>
                         </a>
                         <a href="#" class="xinwenLeft_TList">
                                 学考辅导
@@ -303,23 +304,13 @@
                         <div class="contontKeQuan"><div class="contontKeQuan1"></div></div>
                         <span>基础课程</span>
                     </div>
-                    <a href="#" class="xinwenLeft_TList1">
+                    <a href="./html/course/course.html" class="xinwenLeft_TList1">
                         查看更多
                         <img src="./img/home/jiantou1.png" alt="">
                     </a>
                 </div>
                 <div class="contontKeLists">
-                    <a href="#" class="contontKeList">
-                        <img class="contontKeImg" src="./img/home/ke1.png" alt="">
-                        <div class="contontKeListTxt">
-                            送餐人员动画课程
-                        </div>
-                        <div class="contontKeListGoBuy">
-                            <span class="contontKePrice">￥229.00</span>
-                            <span class="contontKeBuy">立即购买</span>
-                        </div>
-                    </a>
-                    <a href="#" class="contontKeList">
+                    <a href="./html/course/courseDetail.html" class="contontKeList">
                         <img class="contontKeImg" src="./img/home/ke2.png" alt="">
                         <div class="contontKeListTxt">
                             送餐人员动画课程
@@ -329,7 +320,17 @@
                             <span class="contontKeBuy">立即购买</span>
                         </div>
                     </a>
-                    <a href="#" class="contontKeList">
+                    <a href="./html/course/courseDetail.html" class="contontKeList">
+                        <img class="contontKeImg" src="./img/home/ke2.png" alt="">
+                        <div class="contontKeListTxt">
+                            送餐人员动画课程
+                        </div>
+                        <div class="contontKeListGoBuy">
+                            <span class="contontKePrice">￥229.00</span>
+                            <span class="contontKeBuy">立即购买</span>
+                        </div>
+                    </a>
+                    <a href="./html/course/courseDetail.html" class="contontKeList">
                         <img class="contontKeImg" src="./img/home/ke3.png" alt="">
                         <div class="contontKeListTxt">
                             送餐人员动画课程
@@ -339,7 +340,7 @@
                             <span class="contontKeBuy">立即购买</span>
                         </div>
                     </a>
-                    <a href="#" class="contontKeList">
+                    <a href="./html/course/courseDetail.html" class="contontKeList">
                         <img class="contontKeImg" src="./img/home/ke4.png" alt="">
                         <div class="contontKeListTxt">
                             送餐人员动画课程
@@ -351,7 +352,7 @@
                     </a>
                 </div>
             </div>
-            <div class="contontKe">
+            <div class="contontKe ">
                     <div class="contontKeTop">
                         <div class="contontKeLei">
                             <div class="contontKeQuan"><div class="contontKeQuan1"></div></div>
@@ -362,8 +363,8 @@
                             <img src="./img/home/jiantou1.png" alt="">
                         </a>
                     </div>
-                    <div class="contontKeLists">
-                        <a href="#" class="contontKeList">
+                    <div class="contontKeLists contontKeDK">
+                        <a href="./html/course/courseDetail.html" class="contontKeList">
                             <img class="contontKeImg" src="./img/home/ke5.png" alt="">
                             <div class="contontKeListTxt">
                                 送餐人员动画课程
@@ -373,7 +374,7 @@
                                 <span class="contontKeBuy">立即购买</span>
                             </div>
                         </a>
-                        <a href="#" class="contontKeList">
+                        <a href="./html/course/courseDetail.html" class="contontKeList">
                             <img class="contontKeImg" src="./img/home/ke6.png" alt="">
                             <div class="contontKeListTxt">
                                 送餐人员动画课程
@@ -383,7 +384,7 @@
                                 <span class="contontKeBuy">立即购买</span>
                             </div>
                         </a>
-                        <a href="#" class="contontKeList">
+                        <a href="./html/course/courseDetail.html" class="contontKeList">
                             <img class="contontKeImg" src="./img/home/ke7.png" alt="">
                             <div class="contontKeListTxt">
                                 送餐人员动画课程
@@ -393,7 +394,7 @@
                                 <span class="contontKeBuy">立即购买</span>
                             </div>
                         </a>
-                        <a href="#" class="contontKeList">
+                        <a href="./html/course/courseDetail.html" class="contontKeList">
                             <img class="contontKeImg" src="./img/home/ke8.png" alt="">
                             <div class="contontKeListTxt">
                                 送餐人员动画课程
@@ -415,15 +416,15 @@
                                 汇聚最权威<br>
                                 顶尖的专家资源
                         </div>
-                        <div class="quanGengduo">
+                        <a href="#" class="quanGengduo">
                             <span>更多</span>
                             <div class="gengduo">
                                 <img src="./img/home/jiantou1.png" alt="">
                             </div>
                             
-                        </div>
+                        </a>
                     </div>
-                    <div class="contontShiList">
+                    <a href="#" class="contontShiList">
                         <img class="contontshiImg" src="./img/home/jiangshi1.png" alt="">
                         <div class="contontShiTxt">
                             <span class="contontShiTxt1">张志强</span>
@@ -432,8 +433,8 @@
                         <div class="contontShiContent">
                             香港中文大学生命科学学院食品与营养科学系教授...
                         </div>
-                    </div>
-                    <div class="contontShiList">
+                    </a>
+                    <a href="#" class="contontShiList">
                         <img class="contontshiImg" src="./img/home/jiangshi2.png" alt="">
                         <div class="contontShiTxt">
                             <span class="contontShiTxt1">张志强</span>
@@ -442,8 +443,8 @@
                         <div class="contontShiContent">
                             香港中文大学生命科学学院食品与营养科学系教授...
                         </div>
-                    </div>
-                    <div class="contontShiList">
+                    </a>
+                    <a href="#" class="contontShiList">
                         <img class="contontshiImg" src="./img/home/jiangshi3.png" alt="">
                         <div class="contontShiTxt">
                             <span class="contontShiTxt1">张志强</span>
@@ -452,8 +453,8 @@
                         <div class="contontShiContent">
                             香港中文大学生命科学学院食品与营养科学系教授...
                         </div>
-                    </div>
-                    <div class="contontShiList">
+                    </a>
+                    <a href="#" class="contontShiList">
                         <img class="contontshiImg" src="./img/home/jiangshi4.png" alt="">
                         <div class="contontShiTxt">
                             <span class="contontShiTxt1">张志强</span>
@@ -462,8 +463,8 @@
                         <div class="contontShiContent">
                             香港中文大学生命科学学院食品与营养科学系教授...
                         </div>
-                    </div>
-                    <div class="contontShiList">
+                    </a>
+                    <a href="#" class="contontShiList">
                         <img class="contontshiImg" src="./img/home/jiangshi4.png" alt="">
                         <div class="contontShiTxt">
                             <span class="contontShiTxt1">张志强</span>
@@ -472,7 +473,7 @@
                         <div class="contontShiContent">
                             香港中文大学生命科学学院食品与营养科学系教授...
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="contontZbox">
                     <div class="contontKeTop">
