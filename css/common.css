@@ -107,8 +107,9 @@ a:hover{
 }
 
 .headTopCRRImg {
-    width: 17px;
     vertical-align: middle;
+    font-size: 18px;
+    color: #fff;
 }
 
 .headTopCRRTxt {
@@ -242,7 +243,10 @@ a:hover{
 }
 
 .headCTsousuoImg {
-    width: 22px;
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    top: -2px;
 }
 
 
@@ -293,6 +297,7 @@ a:hover{
     background: #fb6026;
     height: 50px;
     line-height: 50px;
+    cursor: pointer;
 }
 
 .headCBLT img {

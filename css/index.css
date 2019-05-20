@@ -163,6 +163,12 @@
     text-align: center;
     padding: 10px 0 3px;
 }
+.gonggeIfont{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0 3px;
+}
 .yonghuTopGGTxt{
     font-size: 13px;
     color: #333;
@@ -642,7 +648,8 @@
     background: #fb6026;
     line-height: 30px;
     text-align: center;
-    margin: 18px 16px 0 0
+    margin: 18px 16px 0 0;
+    border-radius: 5px;
 }
 /* 师资 */
 .contontShi{
@@ -761,6 +768,7 @@
     height: 38px;
     border-radius: 50%;
     top: 73px;
+    z-index: 11;
 }
 .swiperShizi .swiper-button-next:hover{
     background: url('../img/home/jiantou2.png') no-repeat center center #fb6026;
@@ -771,6 +779,7 @@
     height: 38px;
     border-radius: 50%;
     top: 73px;
+    z-index: 11;
 }
 .swiperShizi .swiper-button-prev:hover{
     background: url('../img/home/jiantou3.png') no-repeat center center #fb6026;
@@ -790,4 +799,22 @@
 }
 .xinwenLeft_TListActive{
 	color: #fe7109
+}
+.swiperZheLeft{
+    width: 40%;
+    height: 229px;
+    background: linear-gradient(to right,rgba(255,255,255,.7),rgba(255,255,255,0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.swiperZheRight{
+    width: 40%;
+    height: 229px;
+    background: linear-gradient(to left,rgba(255,255,255,.7),rgba(255,255,255,0));
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
 }
