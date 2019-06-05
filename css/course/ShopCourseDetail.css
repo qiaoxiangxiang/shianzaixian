@@ -1,0 +1,340 @@
+.courseBoxBottom{
+    width: 100%;
+    padding: 0;
+    background: #f4f4f4;
+    position: relative;
+    overflow: hidden;
+}
+
+.detailLie {
+    width: 750px;
+}
+/* 左边 */
+.courseBoxLeft{
+    width: 858px;
+    min-height: 1042px;
+    background: #fff;
+    padding: 23px 0;
+    float: left;
+    border-radius: 10px;
+}
+.courseBoxLeftContent{
+    width: 800px;
+    margin:  0 auto;
+}
+.detailCLTleft{
+    width: 520px;
+}
+.swiperShizi{
+    width: 700px;
+    padding: 0 50px;
+}
+.swiperShizi .swiper-button-next{
+    background: url('../../img/home/jiantou2.png') no-repeat center center rgba(0, 0, 0, 0.6);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    top: 73px;
+    z-index: 11;
+}
+.swiperShizi .swiper-button-next:hover{
+    background: url('../../img/home/jiantou2.png') no-repeat center center #fb6026;
+}
+.swiperShizi .swiper-button-prev{
+    background: url('../../img/home/jiantou3.png') no-repeat center center rgba(0, 0, 0, 0.6);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    top: 73px;
+    z-index: 11;
+}
+.swiperShizi .swiper-button-prev:hover{
+    background: url('../../img/home/jiantou3.png') no-repeat center center #fb6026;
+}
+.swiperLeft,.swiperright{
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #fff;
+    z-index: 10;
+}
+.swiperLeft{ 
+    left: 0;
+}
+.swiperright{
+    right: 0;
+}
+.detailTitleTxt{
+    font-size: 20px;
+    color: #fb6026;
+    text-align: center;
+    padding: 24px 0;
+}
+.courseTopTxt{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 20px 0 44px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+.courseTopTxt:hover{
+    border-bottom: 3px solid #fb6026;
+}
+.courseTopTxtActive{
+    border-bottom: 3px solid #fb6026;
+}
+.courseTopBtn{
+    border-bottom: 1px solid #eee;
+}
+.courseBoxContent{
+    display: none;
+}
+.courseBoxContentActive{
+    display: block;
+}
+.detailCourseImg {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+/* 详情 */
+.courseDetailTxt1,.courseDetailTxt3{
+    font-size: 20px;
+    color: #333;
+    margin: 40px 0 20px;
+}
+.courseDetailTxt2{
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+}
+
+/* 评论 */
+.coursePLlist{
+    padding: 27px 0;
+    border-bottom: 1px solid #eee;
+}
+.coursePLTX{
+    position: relative;
+    overflow: hidden;
+}
+.coursePLTXL{
+    float: left;
+}
+.coursePLTXImg{
+    width: 53px;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+.coursePLTXTxt{
+    display: inline-block;
+    width: 740px;
+
+}
+.coursePLTXTxt2{
+    position: relative;
+    top: 13px;
+}
+.coursePLTXTxt1{
+    margin-left: 17px;
+}
+.coursePLName{
+    margin: 0 17px 0 14px;
+}
+.courseXH{
+    color: #ff9900;
+}
+.courseXG{
+    color: #bfbfbf;
+}
+.coursePLTimer{
+    font-size: 12px;
+    color: #999;
+    line-height: 100%;
+    float: right;
+}
+.coursePLText{
+    width: 725px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    margin-left: 72px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    height: 60px;
+
+}
+/* 页码 */
+.coursePLyema{
+    text-align: center;
+    padding: 30px 0;
+}
+.coursePLyemaS,.coursePLyemaX{
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    margin: 0 3px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+}
+.coursePLyemaT{
+    width: 28px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    margin: 0 3px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+}
+.coursePLyemaS:hover,.coursePLyemaX:hover,.coursePLyemaT:hover{
+    border-color: #fb6026;
+    background: #fb6026;
+    color: #fff;
+}
+.coursePLyemaActive{
+    border-color: #fb6026;
+    background: #fb6026;
+    color: #fff;
+}
+.coursePLTXtxt{
+    width: 770px;
+    height: 150px;
+    line-height: 25px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    font-size: 14px;
+    color: #999;
+    outline: none;
+    padding: 10px 10px;
+}
+.coursePLTXtTiJiaoBox{
+    position: relative;
+    overflow: hidden;
+    padding: 30px 0 14px;
+}
+.coursePLTXtTiJiao{
+    width: 105px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background: #fb6026;
+    border-radius: 4px;
+    text-align: center;
+    float: right;
+    margin-right: 10px;
+}
+.coursePLText1{
+    -webkit-line-clamp: 2;
+    height: 120px;
+}
+/* 笔记 */
+.coursePLTXTxt1Y,.coursePLTXTxt1Y1{
+    font-size: 13px;
+}
+.coursePLTXTxt1Y{
+    color: #fb6026;
+}
+.coursePLTXTxt1Y1{
+    color: #999;
+}
+.courseBJZan{
+    width: 725px;
+    font-size: 14px;
+    color: #666;
+    margin-left: 72px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+}
+.courseBJZanL{
+float: left;
+font-size: 12px;
+color: #888;
+}
+.courseBJZanR{
+float: right;
+font-size: 12px;
+color: #888;
+}
+.courseBJZanIcon{
+ font-size: 16px;
+ color: #999;
+}
+.coursePLTXL1{
+    line-height: 16px;
+}
+/* 右边 */
+.courseBoxRight{
+    width: 284px;
+    padding: 28px 18px;
+    float: right;
+    background: #fff;
+    border-radius: 10px;
+}
+.courseBoxRTitle{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contontKeList {
+    width: 100%;
+    height: 304px;
+    float: left;
+    background: #fff;
+    overflow: hidden;
+    transition: all .2s;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.courseBoxRight .contontKeList:nth-of-type(1){
+    margin-top: 0;
+}
+.contontKeImg {
+    width: 100%;
+    display: block;
+}
+.contontKeListTxt {
+    font-size: 16px;
+    color: #333;
+    line-height: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 22px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.contontKeListGoBuy {
+    border: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.contontKePrice {
+    font-size: 20px;
+    color: #fb6026;
+    display: inline-block;
+    float: left;
+    margin: 15px 0 0 20px;
+}
+.contontKeBuy {
+    float: right;
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    width: 76px;
+    height: 30px;
+    background: #fb6026;
+    line-height: 30px;
+    text-align: center;
+    margin: 12px 16px 0 0;
+    border-radius: 5px;
+}

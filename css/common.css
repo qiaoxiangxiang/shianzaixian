@@ -89,7 +89,9 @@ a:hover{
     font-size: 14px;
     color: #fff;
 }
-
+.headTopC .headToptxt1:hover{
+    color: #ff9000;
+}
 .headTopC .headTopShu,
 .headTopCRtxt .headTopShu {
     font-size: 14px;
@@ -161,13 +163,14 @@ a:hover{
 
 .headCTRight {
     float: right;
-    width: 90px;
+    width: 100px;
     height: 50px;
-    line-height: 66px;
+    line-height: 50px;
 }
 
 .headCTRImg {
-    width: 28px;
+    font-size: 33px;
+    color: #f5885d;
 }
 
 .headCTRtxt {
@@ -311,7 +314,7 @@ a:hover{
     padding-left: 22px;
     background: rgba(0, 0, 0, 0.5);
     height: 57.5px;
-    line-height: 50px;
+    line-height: 57.5px;
 }
 
 .headCBLlist a {
@@ -325,16 +328,20 @@ a:hover{
 .headCBLlist:nth-last-of-type(1) a {
     border-bottom: none;
 }
-
-.headCBLlist img {
+.headCBLlist:hover a,.headCBLlist:hover a .headCBJiantou{
+    color: #fb6026;
+}
+.headCBJiantou {
     width: 10px;
     vertical-align: middle;
     float: right;
     margin-right: 20px;
-    position: absolute;
     right: 17px;
-    top: 15px;
-    opacity: .5;
+    font-size: 40px;
+    opacity: 1;
+    color: #fff;
+    position: relative;
+    top: 0;
 }
 
 
@@ -342,14 +349,13 @@ a:hover{
 
 .headCBC {
     display: inline-block;
-    margin-left: 19px;
     float: left;
     height: 42px;
     padding-top: 8px;
 }
 
 .headCBCNav {
-    margin: 0 21px;
+    margin-left: 53px;
     display: inline-block;
     position: relative;
 }
@@ -433,7 +439,9 @@ a:hover{
     font-size: 12px;
     color: #999;
 }
-
+.footCNav span a:hover {
+    color: #fb6026;
+}
 .footCNavB {
     margin: 0;
 }
@@ -508,7 +516,7 @@ a:hover{
     width: 983px;
     min-height: 808px;
     float: left;
-    background: rgba(255, 255, 255, .9);
+    background: rgba(255, 255, 255, 1);
 }
 
 .content_left_top {
@@ -587,7 +595,7 @@ a:hover{
 }
 
 .content_left_bottom {
-    margin-top: 34px;
+    margin-bottom: 34px;
     border-radius: 5px;
     font-size: 18px;
     color: #fff;

@@ -92,9 +92,31 @@
                             <img src="../../img/kaquan/kaquan3.png" alt="">
                         </div>
                     </div>
+                    <div class="kaquanXuanKeShiBox">
+                        <div class="kaquanXuanKeImg kaquanXKeActive">
+                            <div class="kaquanXuanKeShi">
+                                10课时
+                            </div>
+                        </div>
+                        <div class="kaquanXuanKeImg">
+                            <div class="kaquanXuanKeShi">
+                                20课时
+                            </div>
+                        </div>
+                        <div class="kaquanXuanKeImg">
+                            <div class="kaquanXuanKeShi">
+                                30课时
+                            </div>
+                        </div>
+                        <div class="kaquanXuanKeImg">
+                            <div class="kaquanXuanKeShi">
+                                40课时
+                            </div>
+                        </div>
+                    </div>
                     <div class="kaquanXuanAn">
                         <div class="kaquanXuanQu">取消</div>
-                        <div class="kaquanXuanQue">激活</div>
+                        <div class="kaquanXuanQue">确认</div>
                     </div>
                 </div>
                 <!-- 确认选择 -->
@@ -107,7 +129,7 @@
                     </div>
                     <div class="kaquanQueAn">
                         <div class="kaquanXuanQu">继续激活</div>
-                        <div class="kaquanXuanQue">激活</div>
+                        <div class="kaquanXuanQue1">查看课程</div>
                     </div>
                 </div>
             </div>
@@ -128,7 +150,60 @@
         var height = $(window).height();
         $(".content").css({
             "min-height": height - headerHeight - footerHeight + "px"
+        });
+        // 点击激活
+        $(".kaquanShuQueJ").click(function(){
+            $(".kaquanTopXian").find(".kaquanBu").removeClass("kaquanBuActive")
+            $(".kaquanTopXian").find(".kaquanBu").eq(1).addClass("kaquanBuActive")
+            $(".kaquanShu").removeClass("kaquanActive")
+            $(".kaquanXuan").removeClass("kaquanActive")
+            $(".kaquanQue").removeClass("kaquanActive")
+            $(".kaquanXuan").addClass("kaquanActive")
+            
         })
+        // 激活
+        $(".kaquanXuanQue").click(function(){
+            $(".kaquanTopXian").find(".kaquanBu").removeClass("kaquanBuActive")
+            $(".kaquanTopXian").find(".kaquanBu").eq(2).addClass("kaquanBuActive");
+            $(".kaquanShu").removeClass("kaquanActive")
+            $(".kaquanXuan").removeClass("kaquanActive")
+            $(".kaquanQue").removeClass("kaquanActive")
+            $(".kaquanQue").addClass("kaquanActive")
+        })
+        // 取消
+        $(".kaquanXuanQu").click(function(){
+            $(".kaquanTopXian").find(".kaquanBu").removeClass("kaquanBuActive")
+            $(".kaquanTopXian").find(".kaquanBu").eq(0).addClass("kaquanBuActive")
+            $(".kaquanShu").removeClass("kaquanActive")
+            $(".kaquanXuan").removeClass("kaquanActive")
+            $(".kaquanQue").removeClass("kaquanActive")
+            $(".kaquanShu").addClass("kaquanActive")
+        })
+        //确定激活
+        
+        $(".kaquanXuanQue1").click(function(){
+            
+        })
+        // 选课程 及课时
+        $(".kaquanXuanKe").find(".kaquanXuanKeImg").click(function(){
+            
+            if($(this).hasClass("kaquanXKeActive")){
+                $(".kaquanXuanKe").find(".kaquanXuanKeImg").removeClass("kaquanXKeActive");
+            }else{
+                $(".kaquanXuanKe").find(".kaquanXuanKeImg").removeClass("kaquanXKeActive");
+                $(this).addClass("kaquanXKeActive");
+            }
+        })
+
+        $(".kaquanXuanKeShiBox").find(".kaquanXuanKeImg").click(function(){
+            if($(this).hasClass("kaquanXKeActive")){
+                $(".kaquanXuanKeShiBox").find(".kaquanXuanKeImg").removeClass("kaquanXKeActive");
+            }else{
+                $(".kaquanXuanKeShiBox").find(".kaquanXuanKeImg").removeClass("kaquanXKeActive");
+                $(this).addClass("kaquanXKeActive");
+            }
+        })
+
     }
 </script>
 </html>

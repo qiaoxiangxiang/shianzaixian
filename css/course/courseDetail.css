@@ -199,6 +199,7 @@
     padding-left: 50px;
     line-height: 45px;
     position: relative;
+    overflow: hidden;
 }
 .detailXian{
     width: 1px;

@@ -1,3 +1,11 @@
+.headCBL{
+    overflow: initial;
+}
+.headCBL .headCBLlists {
+    opacity: 1;
+    transition: all .5s;
+}
+
 .swiper_home {
     min-width: 1200px;
     width: 100%;
@@ -196,7 +204,7 @@
     border-radius: 5px;
 }
 .dengluTxtInput input{
-    width: 85%;
+    width: 80%;
     height: 96%;
     border: none;
     outline: none;
@@ -268,11 +276,13 @@
 }
 .dengluTxtDLu{
     float: left;
-    background: linear-gradient(to right,#f6a313,#fd8659)
+    background: linear-gradient(to right,#f6a313,#fd8659);
+    box-shadow: 0px 5px 7px rgba(252,110,47,.3)
 }
 .dengluTxtJH{
     float: right;
-    background: linear-gradient(to right,#5292f5,#267bf8)
+    background: linear-gradient(to right,#5292f5,#267bf8);
+    box-shadow: 0px 5px 7px rgba(38,123,248,.3)
 }
 /* 轮播下方宫格 */
 .gongge{
@@ -291,11 +301,25 @@
 }
 .gLeftImg{
     width: 307px;
+    height: 172px;
+    position: relative;
+    overflow: hidden;
     float: right;
     margin-left: 14px;
+    border-radius: 5px;
 }
 .gLeftImg img{
-    width: 100%;
+    width: 307px;
+    transition: all .3s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.gLeftImg:hover img{
+    width: 327px;  
+    left: -10px;
+    top: -8px;
 }
 .gonggexinxi{
     width: 33%;
@@ -338,19 +362,9 @@
     bottom: 15px;
     width: 100%;
 }
-.gonggexinxi:nth-of-type(1) .gonggeImg,.gonggexinxi:nth-of-type(2) .gonggeImg,.gonggexinxi:nth-of-type(5) .gonggeImg{
-    width: 27px;
+.gonggexinxi:hover .gonggeIfont,.gonggexinxi:hover .gonggeTxt{
+    color: #fb6026;
 }
-.gonggexinxi:nth-of-type(3) .gonggeImg{
-    width: 18px;
-}
-.gonggexinxi:nth-of-type(4) .gonggeImg{
-    width: 22px;
-}
-.gonggexinxi:nth-of-type(6) .gonggeImg{
-    width: 28px;
-}
-
 /* 新闻 */
 .xinwen{
     margin-bottom: 50px;
@@ -358,14 +372,14 @@
     overflow: hidden;
 }
 .xinwenLeft{
-    width: 715px;
-    padding-right: 39px;
+    width: 736px;
+    padding-right: 29px;
     border-right: 1px solid #ddd;
     float: left;
 }
 .xinwenRight{
     width: 405px;
-    padding-left: 39px;
+    padding-left: 29px;
     float: left;
 }
 .xinwenLeft_title{
@@ -383,6 +397,7 @@
     margin-right: 45px;
     font-size: 18px;
     color: #333;
+    cursor: pointer;
 }
 .xinwenLeft_TList:nth-of-type(1){
     margin-left: 5px;
@@ -401,17 +416,42 @@
     display: inline-block;
     height: 100%;
     font-size: 14px;
-    color: #666;
+    color: #fb6026; 
+}
+.contontKeTop .xinwenLeft_TList1{
+    margin-top: 10px;
 }
 .xinwenLeft_TList1 img{
     width: 6px;
     vertical-align: middle;
+}
+.jiantouIconBox{
+    display: inline-block;
+    border: 1px solid #fb6026;
+    border-radius: 12px;
+    width: 12px;
+    line-height: 12px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    top: 3px;
+    color: #fb6026;
+}
+.jiantouIcon{
+    font-size: 14px;
+    position: relative;
+    left: -1px;
+    top: 1px;
 }
 /* 图文 */
 .xinwenLeftBox{
     position: relative;
     overflow: hidden;
     margin-top: 30px;
+    display: none;
+}
+.xinwenLeftBoxs .xinwenLeftBox:nth-of-type(1){
+    display: block;
 }
 .xinwenLeftImgTxt{
     margin-right: 34px;
@@ -421,22 +461,43 @@
     display: inline-block;
     float: left;
 }
+.xinwenLists{
+    width: 340px;
+}
+.xinwenLeftImgTxt{
+    width: 360px;
+}
 .xinwenLeftITBox{
     position: relative;
-    width: 330px;
-    margin-bottom: 5px
+    width: 360px;
+    height: 206px;
+    overflow: hidden;
+    display: block;
+    border-radius: 5px;
+}
+.xinwenLeftITBox img{
+    width: 360px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s;
+}
+.xinwenLeftITBox:hover img{
+    width: 380px;
+    left: -10px;
+    top: -5px;
 }
 .xinwenLeftI{
     width: 100%;
     display: block;
 }
 .xinwenLeftIT{
-    width: 305px;
+    width: 336px;
     padding-left: 24px;
     line-height: 50px;
     background: rgba(0, 0, 0, 0.6);
     font-size: 18px;
-    color: #fff;
+    color: #fb6026;
     position: absolute;
     bottom: 0;
 }
@@ -444,6 +505,48 @@
     width: 100%;
     height: 104px;
     padding-top: 20px;
+}
+.xinwenLBImgTxt{
+    position: relative;
+    overflow: hidden;
+}
+.xinwenLBList{
+    width: 170px;
+    height: 164px;
+    padding-top: 20px;
+    float: left;
+    display: block;
+    margin-top: 8px;
+}
+.xinwenLBImgTxt .xinwenLBList:nth-of-type(2){
+    margin-left: 20px;
+}
+.xinwenLBImgTxt .xinwenLBList .xinwenTimer{
+    font-size: 16px;
+    color: #fb6026;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    margin-top: 15px;
+}
+.xinwenLBListBox{
+    width: 170px;
+    height: 124px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.xinwenLBListBox img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s;
+}
+.xinwenLBListBox:hover img{
+    width: 190px;
+    left: -10px;
+    top: -10px;
 }
 .xinwenTitle,.xinwenContent,.xinwenTimer{
     width: 100%;
@@ -519,9 +622,25 @@
     float: left;
     margin-right: 18px;
 }
+.xinwenRlistImgBox{
+    width: 150px;
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    float: left;
+}
 .xinwenRlistImg{
     width: 150px;
-    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s;
+}
+.xinwenRlistImgBox:hover .xinwenRlistImg{
+    width: 170px;
+    left: -10px;
+    top: -10px;
 }
 .xinwenRTitle{
     width: 100%;
@@ -552,7 +671,7 @@
 /* 课程 */
 .contontKeBox{
     width: 100%;
-    height: 826px;
+    height: 902px;
     background: #f8f8f8;
 }
 .contontKe{
@@ -564,14 +683,16 @@
 .contontKeTop{
     position: relative;
     overflow: hidden;
-    margin: 48px 0 0;
+    margin: 50px 0 0;
 }
 .contontKeLei{
     float: left;
+    font-size: 24px;
+    color: #333;
 }
 .contontKeQuan{
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border: 1px solid #fc885c;
     position: relative;
     border-radius: 50%;
@@ -580,37 +701,37 @@
     margin-right: 5px;
 }
 .contontKeQuan1{
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     background: #fc885c;
     position: absolute;
     border-radius: 50%;
     top: 50%;
     left: 50%;
-    margin-left: -4px;
-    margin-top: -4px;
+    margin-left: -5px;
+    margin-top: -5px;
 }
 .contontKeLists{
     position: relative;
     overflow: hidden;
-    padding-top: 28px;
+    padding-top: 40px;
 }
-.contontKeList{
-    width: 282px;
-    height: 278px;
+.contontKeList,.contontKeImgBox{
+    width: 217px;
+    height: 312px;
     float: left;
-    margin-left: 24px;
+    margin-left: 28px;
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
     transition: all .2s;
     margin-top: 0;
 }
+.contontKeImgBox{
+    margin-left: 0;
+}
 .contontKeList:hover{
 	margin-top: -10px;
-}
-.contontKeDK .contontKeList{
-	height: 294px;
 }
 .contontKeList:nth-of-type(1){
     margin-left: 0;
@@ -622,7 +743,7 @@
 .contontKeListTxt{
     font-size: 16px;
     color: #333;
-    line-height: 52px;
+    line-height: 50px;
     text-overflow:ellipsis;
     overflow:hidden;
     white-space:nowrap;
@@ -630,13 +751,15 @@
 }
 .contontKeListGoBuy{
     border-top: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
 }
 .contontKePrice{
     font-size: 20px;
     color: #fb6026;
     display: inline-block;
     float: left;
-    margin: 23px 0  0 20px;
+    margin: 15px 0 0 20px;
 }
 .contontKeBuy{
     float: right;
@@ -648,43 +771,50 @@
     background: #fb6026;
     line-height: 30px;
     text-align: center;
-    margin: 18px 16px 0 0;
+    margin: 12px 16px 0 0;
     border-radius: 5px;
 }
 /* 师资 */
 .contontShi{
     width: 100%;
-    height: 868px;
+    height: 990px;
     background: #fff;
 }
 .contontShiBox{
     width: 100%;
     height: 318px;
     padding-bottom: 30px;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 .contontQuanShi{
-    width: 232px;
-    height: 286px;
+    width: 290px;
+    height: 347px;
     border-radius: 10px;
     box-shadow: 0 0px 30px #f2f2f2;
     background: #fff;
     float: left;
+    background: url(../img/home/quanshi.png) no-repeat center center;
+    background-size: 100%;
+    margin-right: 10px;
 }
 .contontshiImg{
     width: 100%;
     display: block;
+    border-radius: 5px;
 }
 .contontQuanShiTxt1{
-    padding: 36px 0 40px;
+    padding: 0 0 40px;
     text-align: center;
     font-size: 20px;
     color: #333;
+    margin-top: 130px;
+    line-height: 33px;
 }
 .quanGengduo{
+    display: block;
     text-align: center;
     font-size: 14px;
-    color: #333;
+    color: #666666;
 }
 .gengduo{
     width: 15px;
@@ -695,19 +825,23 @@
     text-align: center;
     display: inline-block;
 }
+.gengduo .jiantouIcon{
+    left: 0;
+    top: 0;
+}
 .gengsuo img{
     width: 7px;
 }
 .contontShiList{
-    width: 172px;
-    height: 300px;
+    width: 194px;
+    height: 336px;
     float: left;
-    margin-left: 21px;
-    margin-top: 0;
+    margin-left: 30px;
+    margin-top: 12px;
     transition: all .2s;
 }
 .contontShiList:hover{
-	margin-top: -10px;
+	margin-top: 0px;
 }
 .contontShiTxt{
     margin: 10px 0 6px;
@@ -725,24 +859,38 @@
     font-size: 13px;
     color: #999;
     height: 38px;
+    line-height: 20px;
+    margin-top: 10px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
 }
 .contontZbox .contontKeTop{
-    margin-top: 14px;
+    margin-top: 55px;
     margin-bottom: 40px;
 }
 .swiperShiziimg{
     width: 202px;
     height: 136px;
     border: 1px solid #c8932e;
+    position: relative;
+    overflow: hidden;
 }
 .swiperShiziimg img{
     width: 100%;
     height: 100%;
     display: block;
+    transition:  all .3s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.swiperShiziimg:hover img{
+    width: 220px;
+    height: 156px;
+    left: -10px;
+    top: -10px;
 }
 .swiperShiziY{
     width: 210px;
@@ -801,7 +949,7 @@
 	color: #fe7109
 }
 .swiperZheLeft{
-    width: 40%;
+    width: 10%;
     height: 229px;
     background: linear-gradient(to right,rgba(255,255,255,.7),rgba(255,255,255,0));
     position: absolute;
@@ -810,7 +958,7 @@
     z-index: 10;
 }
 .swiperZheRight{
-    width: 40%;
+    width: 10%;
     height: 229px;
     background: linear-gradient(to left,rgba(255,255,255,.7),rgba(255,255,255,0));
     position: absolute;

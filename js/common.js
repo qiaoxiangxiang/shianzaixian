@@ -60,7 +60,7 @@ $(".headerIndex").append(`
                     </div>
                 </div>
                 <a href="#" class="headCTRight">
-                    <img class="headCTRImg" src="./img/home/app.png" alt="">
+                    <span class="iconfont headCTRImg">&#xe705;</span>
                     <h3 class="headCTH3">
                         <span class="headCTRtxt">官方APP</span><br/>
                         <span class="headCTRtxt1">在线学习</span>
@@ -71,66 +71,66 @@ $(".headerIndex").append(`
                 <div class="headCBL">
                     <div class="headCBLT"><img src="./img/home/liebioa.png">选课中心</div>
                     <div class="headCBLlists">    
-                        <div class="headCBLlist"><a href="#">监管人员<img src="./img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">餐饮领域学员<img src="./img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">流通领域学员<img src="./img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">生产领域学员<img src="./img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">送餐人员动画课程<img src="./img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">入网餐饮商户课程<img src="./img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">食品安全动画课程<img src="./img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">专家论坛<img src="./img/home/jiantou2.png"></a></div>
+                        <div class="headCBLlist"><a href="#">监管人员<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">餐饮领域学员<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">流通领域学员<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">生产领域学员<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">送餐人员动画课程<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">入网餐饮商户课程<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">食品安全动画课程<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">专家论坛<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
                     </div>
                 </div>
                 <div class="headCBC">
-                    <span class="headCBCNav">
-                        <a href="./index.html">
-                            首页
+                <span class="headCBCNav">
+                    <a href="../../index.html">
+                        首页
                         <span class="headCBCXian"></span>
                     </a>
-                    </span>
-                    <span class="headCBCNav">
-                        <a href="#">
-                            新闻资讯
-                        <span class="headCBCXian"></span>
-                    </a>
-                    </span>
-                    <span class="headCBCNav">
-                        <a href="#">
-                            在线考场
-                        <span class="headCBCXian"></span>
-                    </a>
-                    </span>
-                    <span class="headCBCNav">
-                        <a href="#">
-                            法规标准
-                        <span class="headCBCXian"></span>
-                    </a>
-                    </span>
-                    <span class="headCBCNav">
-                        <a href="#">
-                            师资力量
-                        <span class="headCBCXian"></span>
-                    </a>
-                    </span>
-                    <span class="headCBCNav">
-                        <a href="#">
-                            操作助手
-                        <span class="headCBCXian"></span>
-                    </a>
-                    </span>
-                    <span class="headCBCNav">
-                        <a href="#">
-                            关于我们
-                        <span class="headCBCXian"></span>
-                    </a>
-                    </span>
-                </div>
-                <div class="headCBR">
+                </span>
+                <span class="headCBCNav">
                     <a href="#">
-                        App下载
+                        食安培训                                     
+                        <span class="headCBCXian"></span>
                     </a>
+                </span>
+                <span class="headCBCNav">
+                    <a href="#">
+                        在线考场
+                        <span class="headCBCXian"></span>
+                    </a>
+                </span>
+                <span class="headCBCNav">
+                    <a href="#">
+                        证书查询
+                        <span class="headCBCXian"></span>
+                    </a>
+                </span>
+                <span class="headCBCNav">
+                    <a href="#">
+                        新闻资讯
+                        <span class="headCBCXian"></span>
+                    </a>
+                </span>
+                <span class="headCBCNav">
+                    <a href="#">
+                        师资力量
+                        <span class="headCBCXian"></span>
+                    </a>
+                </span>
+                <span class="headCBCNav">
+                    <a href="#">
+                        操作助手
+                        <span class="headCBCXian"></span>
+                    </a>
+                </span>
+                <span class="headCBCNav">
+                    <a href="#">
+                        关于我们
+                        <span class="headCBCXian"></span>
+                    </a>
+                </span>
                 </div>
-
             </div>
         </div>
     </div>
@@ -195,7 +195,7 @@ $(".header").append(`
                     </div>
                 </div>
                 <a href="#" class="headCTRight">
-                    <img class="headCTRImg" src="../../img/home/app.png" alt="">
+                    <span class="iconfont headCTRImg">&#xe705;</span>
                     <h3 class="headCTH3">
                         <span class="headCTRtxt">官方APP</span><br/>
                         <span class="headCTRtxt1">在线学习</span>
@@ -206,14 +206,14 @@ $(".header").append(`
                 <div class="headCBL">
                     <div class="headCBLT"><img src="../../img/home/liebioa.png">选课中心</div>
                     <div class="headCBLlists">    
-                        <div class="headCBLlist"><a href="#">监管人员<img src="../../img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">餐饮领域学员<img src="../../img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">流通领域学员<img src="../../img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">生产领域学员<img src="../../img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">送餐人员动画课程<img src="../../img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">入网餐饮商户课程<img src="../../img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">食品安全动画课程<img src="../../img/home/jiantou2.png"></a></div>
-                        <div class="headCBLlist"><a href="#">专家论坛<img src="../../img/home/jiantou2.png"></a></div>
+                        <div class="headCBLlist"><a href="#">监管人员<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">餐饮领域学员<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">流通领域学员<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">生产领域学员<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">送餐人员动画课程<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">入网餐饮商户课程<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">食品安全动画课程<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
+                        <div class="headCBLlist"><a href="#">专家论坛<span class='iconfont headCBJiantou'>&#xe633;</span></a></div>
                     </div>
                 </div>
                 <div class="headCBC">
@@ -225,47 +225,47 @@ $(".header").append(`
                     </span>
                     <span class="headCBCNav">
                         <a href="#">
-                            新闻资讯
-                        <span class="headCBCXian"></span>
-                    </a>
+                            食安培训                                     
+                            <span class="headCBCXian"></span>
+                        </a>
                     </span>
                     <span class="headCBCNav">
                         <a href="#">
                             在线考场
-                        <span class="headCBCXian"></span>
-                    </a>
+                            <span class="headCBCXian"></span>
+                        </a>
                     </span>
                     <span class="headCBCNav">
                         <a href="#">
-                            法规标准
-                        <span class="headCBCXian"></span>
-                    </a>
+                            证书查询
+                            <span class="headCBCXian"></span>
+                        </a>
+                    </span>
+                    <span class="headCBCNav">
+                        <a href="#">
+                            新闻资讯
+                            <span class="headCBCXian"></span>
+                        </a>
                     </span>
                     <span class="headCBCNav">
                         <a href="#">
                             师资力量
-                        <span class="headCBCXian"></span>
-                    </a>
+                            <span class="headCBCXian"></span>
+                        </a>
                     </span>
                     <span class="headCBCNav">
                         <a href="#">
                             操作助手
-                        <span class="headCBCXian"></span>
-                    </a>
+                            <span class="headCBCXian"></span>
+                        </a>
                     </span>
                     <span class="headCBCNav">
                         <a href="#">
                             关于我们
-                        <span class="headCBCXian"></span>
-                    </a>
+                            <span class="headCBCXian"></span>
+                        </a>
                     </span>
                 </div>
-                <div class="headCBR">
-                    <a href="#">
-                        App下载
-                    </a>
-                </div>
-
             </div>
         </div>
     </div>
@@ -364,6 +364,10 @@ $(".footer").append(`
 
 
 $(".contentLeft").append(`
+<a href="../../html/user/kaquan.html" class="content_left_bottom">
+    <span class="iconfont">&#xe601;</span>
+    激活码
+</a>
 <div class="content_left_top">
     <a href="#" class="contentLTli">
         <span class="iconfont">&#xe608;</span>
@@ -419,11 +423,8 @@ $(".contentLeft").append(`
             <span class="commonQJ iconfont">&#xe633;</span>
         </a>
     </div>
-    </div>
-    <a href="../../html/user/kaquan.html" class="content_left_bottom">
-	    <span class="iconfont">&#xe601;</span>
-	    激活码
-</a>
+</div>
+    
 `)
 // 公共代码
 //canvas图形验证码

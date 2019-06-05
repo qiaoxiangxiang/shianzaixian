@@ -1,5 +1,5 @@
 .content {
-    background: url('../../img/kaquan/beijing.png')no-repeat center center;
+    background: #f4f4f4;
     padding-bottom: 46px;
 }
 
@@ -140,6 +140,7 @@
     background: #fb6026;
     margin: 0 auto;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .kaquanBuActive {
@@ -154,7 +155,7 @@
 /* 选择课程 */
 .kaquanXuan {
     width: 924px;
-    height: 326px;
+    height: 340px;
     margin: 110px auto 0;
 }
 
@@ -179,6 +180,7 @@
     border-radius: 10px;
     float: left;
     margin-left: 6px;
+    cursor: pointer;
 }
 
 .kaquanXuanKeImg:nth-of-type(1) {
@@ -199,7 +201,8 @@
 }
 
 .kaquanXuanQu,
-.kaquanXuanQue {
+.kaquanXuanQue,
+.kaquanXuanQue1 {
     width: 162px;
     line-height: 50px;
     text-align: center;
@@ -208,6 +211,7 @@
     background: #fb6026;
     border-radius: 10px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .kaquanXuanQu {
@@ -242,4 +246,21 @@
 
 .kaquanQueAn .kaquanXuanQu {
     background: #239cee;
+}
+.kaquanXuanKeShiBox{
+    position: relative;
+    overflow: hidden;
+    margin-top: 48px;
+}
+.kaquanXuanKeShi{
+    width: 200px;
+    line-height: 85px;
+    background: #fff;
+    box-shadow: 0 0 20px #eee;
+    text-align: center;
+    font-size: 24px;
+    color: #777;
+    margin-left: 6px;
+    margin-top: 6px;
+    border-radius: 4px;
 }
